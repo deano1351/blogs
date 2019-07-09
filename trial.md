@@ -1,31 +1,27 @@
 ## Introduction
-In this guide, you will learn to work with logical functions in MS Excel 2019. Logical functions present in Excel 2019 are mentioned below:
+In this guide, you will learn how to work with logical functions in Mcirosoft Excel 2019. There are various logical functions which are present in the Excel 2019 version as mentioned below:
 
-
+- TRUE
+- FALSE
+- OR
+- AND
+- NOT
+- XOR
 - IF  
 - IFERROR 
-- AND 
-- FALSE 
 - IFNA 
-- IFS 
-- NOT 
-- OR 
+- IFS
 - SWITCH 
-- TRUE 
-- XOR 
 
 ## Logical Functions
-Now we will start learning how logical functions can be used to make our work easy through examples:
+In this section, you will learn about each of these logical functions through various scenarios.
 
+### TRUE and FALSE Functions
+We use the `TRUE` and `FALSE` functions when we want to showcase if a given condition is met or not. For instance, `5 < 3` is a right condition hence the `TRUE` function when used with the `IF` function (or similar) returns a `TRUE` value. Had the condition been wrong it would had resulted in the `FALSE` value.
 
-### IF Function
-IF function checks whether the given condition is met or not. In case condition is met, it returns `TRUE` otherwise it will return `FALSE`.
+Notice, that `TRUE` function is not the same as the `TRUE` value. The `TRUE` function doesn't hold any argument inside the round brackets.
+We will give you a scenario to implement these funcitons when we are discussing `IF` function.
 
-Let's consider a very basic example where you need to compare two numbers whether they are equal or not. In case they are equal, IF function should return `TRUE` else `FALSE`.
-
-| A | B |
-| --- | --- |
-| 4 | 5 |
-
-Here we have a value for each column A  and B respectively. we need to check whether they are equal or not.If they are equal it should return TRUE else FALSE.
+### OR Function
+A logical `OR` function follows the given truth table:
 
