@@ -144,3 +144,49 @@ So, we can write a condition to check if people food preference is `Veg` and the
 
 
 ### The XOR Function
+A logical `XOR` function follows the given truth table:
+
+
+| Input A | Input B | Input C | Output |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 |
+
+To understand the above table, consider two inputs at a time and if there is same value then the result is `FALSE` (or `0`), next use this result of the first two inputs and take the third input and perform the same action. To illustrate it, let us take the last row which has `1` for all the inputs. Here, Input A and B has `1` and `1` respectively which gives `0`, now combine this `0` and Input C (`1`). As you can observe that this time you have different values hence the output is `1`.
+
+To illustrate this in Excel, let us consider an example where a child is presented with three different food items. At a time, she is given choice between the two, she can't choose both, once the choice from the first two is made then the third item is presented for a final choice.
+
+
+| | A | B | C | D |
+| --- | --- | --- | --- | --- |
+| | **Candy** | **Ice-cream** | **Chocolate** | **Result** |
+| 1 | TRUE  | FALSE     | FALSE     | ?   |
+| 2 | TRUE  | FALSE     | TRUE      | ?  |
+| 3 | FALSE | FALSE     | FALSE     | ?  |
+| 4 | TRUE  | TRUE      | TRUE      | ?   |
+
+The syntax for the logical `XOR` in Excel is:
+
+
+```
+=XOR(logical1, logical2, ... )
+```
+
+To solve the given scenario, we can implement `XOR` function starting with **`=XOR(A2, B2, C2)`** formula in the cell `D2` and stretching it to the subsequent rows. This results in the given result:
+
+
+| | A | B | C | D |
+| --- | --- | --- | --- | --- |
+| | **Candy** | **Ice-cream** | **Chocolate** | **Result** |
+| 1 | TRUE  | FALSE     | FALSE     | TRUE   |
+| 2 | TRUE  | FALSE     | TRUE      | FALSE  |
+| 3 | FALSE | FALSE     | FALSE     | FALSE  |
+| 4 | TRUE  | TRUE      | TRUE      | TRUE   |
+
+
