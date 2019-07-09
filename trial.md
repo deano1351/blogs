@@ -20,7 +20,6 @@ In this section, you will learn about each of these logical functions through va
 We use the `TRUE` and `FALSE` functions when we want to showcase if a given condition is met or not. For instance, `5 < 3` is a right condition hence the `TRUE` function when used with the `IF` function (or similar) returns a `TRUE` value. Had the condition been wrong it would had resulted in the `FALSE` value.
 
 Notice, that `TRUE` function is not the same as the `TRUE` value. The `TRUE` function doesn't hold any argument inside the round brackets.
-We will give you a scenario to implement these funcitons when we are discussing `IF` function.
 
 ### The OR Function
 A logical `OR` function follows the given truth table:
@@ -260,3 +259,39 @@ To solve this problem, we can use the `IFERROR` function by writing its formula 
 | 5 |     451 |     584 | 0.772260274 |
 | 6 |      65 |      12 | 5.416666667 |
 
+### The IFNA Function
+The logical `IFNA` function is mostly similar to the `IFERROR` function except for the error it checks for a `#N/A` value i.e., a missing value. 
+**Note** - A missing value is not similar to a blank value.
+
+The syntax for the `IFNA` function is given below:
+
+
+```
+=IFNA(expression, value_if_NA)
+```
+
+Let us take a scenario where we use missing value as well as blank value in our input data and then implement the `IFNA` function. For the missing value, let us give the output value as `NULL value`. Here's the data to experiment:
+
+
+| | A | B | 
+| --- | --- | --- |
+|  | **Input** | **Output** |
+| 1 | #N/A | ? |
+| 2 |  | ? |
+| 3 | #N/A | ? |
+| 4 | 0    | ? |
+| 5 | 584  | ? |
+| 6 | 12   | ? |
+
+You can implement the formula **`=IFNA(A1, "NULL value")`** in the cell `B1` to get the following output. Do observe the output for cell `B2`.
+
+
+| | A | B | 
+| --- | --- | --- |
+|  | **Input** | **Output** |
+| 1 | #N/A | **NULL value** |
+| 2 |  | **0** |
+| 3 | #N/A | **NULL value** |
+| 4 | 0    | **0** |
+| 5 | 584  | **584** |
+| 6 | 12   | **12** |
