@@ -25,3 +25,87 @@ We will give you a scenario to implement these funcitons when we are discussing 
 ### OR Function
 A logical `OR` function follows the given truth table:
 
+
+| Input A | Input B | Input C | Output |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 1 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 |
+
+In the above table you can also consider `0` as a `FALSE` value and `1` as a `TRUE` value. As you can observe if any input has a `TRUE` value then the output of the logical `OR` function is `TRUE`. However, if all the inputs are `FALSE` then the output becomes `FALSE`. 
+
+Let us consider a scenario where you can learn how to implement the logical `OR` function in Excel. We take five students attendance who have registered for a workshop. The final attendance is marked only when student is present any one of the day. Here's the data:
+
+| | A | B | C | D | E |
+| --- | --- | --- | --- | --- | --- |
+| | **Student list** | **Day 1** | **Day 2** | **Day 3** | **Attendance** |
+| 1 | Student 1    | TRUE  | FALSE | TRUE  | ? |
+| 2 | Student 2    | TRUE  | TRUE  | TRUE  | ? |
+| 3 | Student 3    | TRUE  | FALSE | TRUE  | ? |
+| 4 | Student 4    | TRUE  | TRUE  | FALSE | ? |
+| 5 | Student 5    | FALSE | FALSE | FALSE | ? |
+
+So, to fill the attendance, we provide the following logical `OR` formula with syntax:
+
+
+```
+=OR(logical1, logical2, ... )
+```
+
+Therefore, let us put the formula **`=OR(B2, C2, D2)`** in cell `E2` and then apply it in subsequent rows. This will result in the updated attendance as shown:
+
+
+| | A | B | C | D | E |
+| --- | --- | --- | --- | --- | --- |
+| | **Student list** | **Day 1** | **Day 2** | **Day 3** | **Attendance** |
+| 1 | Student 1    | TRUE  | FALSE | TRUE  | **TRUE** |
+| 2 | Student 2    | TRUE  | TRUE  | TRUE  | **TRUE** |
+| 3 | Student 3    | TRUE  | FALSE | TRUE  | **TRUE** |
+| 4 | Student 4    | TRUE  | TRUE  | FALSE | **TRUE** |
+| 5 | Student 5    | FALSE | FALSE | FALSE | **FALSE** |
+
+### AND Function
+A logical `AND` function follows the given truth table:
+
+
+| Input A | Input B | Input C | Output |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 |
+
+As mentioned in the `OR` function section, you can also consider `0` as a `FALSE` value and `1` as a `TRUE` value. As you can observe if any input has a `FALSE` value then the output of the logical `AND` function is `FALSE`. However, if all the inputs are `TRUE` then the output becomes `TRUE`. 
+
+The syntax of the logical `AND` function is given below:
+
+
+```
+=AND(logical1, logical2, ... )
+```
+
+To learn how to implemet `AND` function in the Excel, let us take the same student attendance scenario but this time let us consider that if student is absent even a single day then he/she will be marked absent (`FALSE` value).
+
+This time cell `E2` will hold the following formula: **`=AND(B2, C2, D2)`**. This will result in the following attendance sheet where only one student is marked present.
+
+
+| | A | B | C | D | E |
+| --- | --- | --- | --- | --- | --- |
+| | **Student list** | **Day 1** | **Day 2** | **Day 3** | **Attendance** |
+| 1 | Student 1    | TRUE  | FALSE | TRUE  | **FALSE** |
+| 2 | Student 2    | TRUE  | TRUE  | TRUE  | **TRUE** |
+| 3 | Student 3    | TRUE  | FALSE | TRUE  | **FALSE** |
+| 4 | Student 4    | TRUE  | TRUE  | FALSE | **FALSE** |
+| 5 | Student 5    | FALSE | FALSE | FALSE | **FALSE** |
+
+
+
