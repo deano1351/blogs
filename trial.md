@@ -295,3 +295,23 @@ You can implement the formula **`=IFNA(A1, "NULL value")`** in the cell `B1` to 
 | 4 | 0    | **0** |
 | 5 | 584  | **584** |
 | 6 | 12   | **12** |
+
+### The IFS and SWITCH Functions
+The `IFS` function checks for multiple expressions in one go as compared to simple `IF` function. The syntax is given below:
+
+
+```
+=IFS(expression1, value_if_expression1_is_true, expression2, value_if_expression2_is_true, ...)
+```
+
+The `SWITCH` function evaluates one value (called the expression) against a list of values, and returns the result corresponding to the first matching value. If there is no match, an optional default value may be returned. The syntax is given below:
+
+
+```
+=SWITCH(Value to switch, Value to match1...[2-126], Value to return if there's a match1...[2-126], Value to return if there's no match)
+```
+These two functions are left for you to tryout by your own!
+
+
+## Conclusion
+In this guide, you have learned about the various logical functions available in MS Excel 2019 like `TRUE`, `IF`, `OR`, `NOT`, etc. 
