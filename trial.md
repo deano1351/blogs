@@ -189,4 +189,39 @@ To solve the given scenario, we can implement `XOR` function starting with **`=X
 | 3 | FALSE | FALSE     | FALSE     | FALSE  |
 | 4 | TRUE  | TRUE      | TRUE      | TRUE   |
 
+### The IF Function
+The logical `IF` function checks for a given condition. If the condition holds `TRUE` the first argument after the condition argument is returned else the second argument after the condition argument is returned.
+
+The syntax of the `IF` function in Excel is given below:
+
+
+```
+=IF(condition, true value, false value)
+```
+
+Consider a case where you are provided with the data of students marks. You need to mark a student fail if one's total marks are less than or equal to 150 out of 500.
+
+
+|   |      A      |   B    |
+| --- | --- | --- |
+|   | **Total marks** | **Result** |
+| 1 | 425         | ? |
+| 2 | 125         | ? |
+| 3 | 325         | ? |
+| 4 | 441         | ? |
+| 5 | 87          | ? |
+| 6 | 222         | ? |
+
+This can be achieved by using the logical `IF` function. You can write the given formula **`=IF(A2 <= 150, "FAIL", "PASS")`** in the cell `B2` and apply the formula in the subsequent rows to achieve the following result:
+
+
+|   |      A      |   B    |
+| --- | --- | --- |
+|   | **Total marks** | **Result** |
+| 1 | 425         | **PASS**   |
+| 2 | 125         | **FAIL**   |
+| 3 | 325         | **PASS**   |
+| 4 | 441         | **PASS**   |
+| 5 | 87          | **FAIL**   |
+| 6 | 222         | **PASS**   |
 
