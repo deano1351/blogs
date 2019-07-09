@@ -57,7 +57,7 @@ So, to fill the attendance, we provide the following logical `OR` formula with s
 =OR(logical1, logical2, ... )
 ```
 
-Therefore, let us put the formula **`=OR(B2, C2, D2)`** in cell `E2` and then apply it in subsequent rows. This will result in the updated attendance as shown:
+Therefore, let us put the formula **`=OR(B2, C2, D2)`** in cell `E1` and then apply it in subsequent rows. This will result in the updated attendance as shown:
 
 
 | | A | B | C | D | E |
@@ -95,7 +95,7 @@ The syntax of the logical `AND` function is given below:
 
 To learn how to implemet `AND` function in the Excel, let us take the same student attendance scenario but this time let us consider that if student is absent even a single day then he/she will be marked absent (`FALSE` value).
 
-This time cell `E2` will hold the following formula: **`=AND(B2, C2, D2)`**. This will result in the following attendance sheet where only one student is marked present.
+This time cell `E1` will hold the following formula: **`=AND(B2, C2, D2)`**. This will result in the following attendance sheet where only one student is marked present.
 
 
 | | A | B | C | D | E |
@@ -178,7 +178,7 @@ The syntax for the logical `XOR` in Excel is:
 =XOR(logical1, logical2, ... )
 ```
 
-To solve the given scenario, we can implement `XOR` function starting with **`=XOR(A2, B2, C2)`** formula in the cell `D2` and stretching it to the subsequent rows. This results in the given result:
+To solve the given scenario, we can implement `XOR` function starting with **`=XOR(A2, B2, C2)`** formula in the cell `D1` and stretching it to the subsequent rows. This results in the given result:
 
 
 | | A | B | C | D |
@@ -212,7 +212,7 @@ Consider a case where you are provided with the data of students marks. You need
 | 5 | 87          | ? |
 | 6 | 222         | ? |
 
-This can be achieved by using the logical `IF` function. You can write the given formula **`=IF(A2 <= 150, "FAIL", "PASS")`** in the cell `B2` and apply the formula in the subsequent rows to achieve the following result:
+This can be achieved by using the logical `IF` function. You can write the given formula **`=IF(A2 <= 150, "FAIL", "PASS")`** in the cell `B1` and apply the formula in the subsequent rows to achieve the following result:
 
 
 |   |      A      |   B    |
@@ -225,3 +225,4 @@ This can be achieved by using the logical `IF` function. You can write the given
 | 5 | 87          | **FAIL**   |
 | 6 | 222         | **PASS**   |
 
+### The IFERROR Function
