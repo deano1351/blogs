@@ -16,13 +16,13 @@ In this guide, you will learn how to work with logical functions in Mcirosoft Ex
 ## Logical Functions
 In this section, you will learn about each of these logical functions through various scenarios.
 
-### TRUE and FALSE Functions
+### The TRUE and FALSE Functions
 We use the `TRUE` and `FALSE` functions when we want to showcase if a given condition is met or not. For instance, `5 < 3` is a right condition hence the `TRUE` function when used with the `IF` function (or similar) returns a `TRUE` value. Had the condition been wrong it would had resulted in the `FALSE` value.
 
 Notice, that `TRUE` function is not the same as the `TRUE` value. The `TRUE` function doesn't hold any argument inside the round brackets.
 We will give you a scenario to implement these funcitons when we are discussing `IF` function.
 
-### OR Function
+### The OR Function
 A logical `OR` function follows the given truth table:
 
 
@@ -69,7 +69,7 @@ Therefore, let us put the formula **`=OR(B2, C2, D2)`** in cell `E2` and then ap
 | 4 | Student 4    | TRUE  | TRUE  | FALSE | **TRUE** |
 | 5 | Student 5    | FALSE | FALSE | FALSE | **FALSE** |
 
-### AND Function
+### The AND Function
 A logical `AND` function follows the given truth table:
 
 
@@ -107,5 +107,40 @@ This time cell `E2` will hold the following formula: **`=AND(B2, C2, D2)`**. Thi
 | 4 | Student 4    | TRUE  | TRUE  | FALSE | **FALSE** |
 | 5 | Student 5    | FALSE | FALSE | FALSE | **FALSE** |
 
+### The NOT Function
+The logical `NOT` function has the following truth table:
+
+| Input | Output | 
+| --- | --- |
+| TRUE | FALSE |
+| FALSE | TRUE |
+
+As you can observe from the table, the `NOT` function inverts a given logical input. Let us take a scenario to understand how to use it in Excel.
+
+You have a data of people likings which even includes their `Veg` and `Non-Veg` type inputs as shown in the below table. How can you select people who are `Non-Veg`?
 
 
+| | A | B |
+| --- | --- | --- |
+| | **Food Preference** | **Result** |
+| 1 | Veg | ? |
+| 2 | Non-Veg | ? |
+
+To implement the `NOT` function, here's the syntax:
+
+
+```
+=NOT(logical condition)
+```
+
+So, we can write a condition to check if people food preference is `Veg` and then later pass the result to the `NOT` function. To achieve this, you can write **`=NOT(A2="Veg")`** in the cell `B1` which will give you the following result:
+
+
+| | A | B |
+| --- | --- | --- |
+| | **Food Preference** | **Result** |
+| 1 | Veg | **FALSE** |
+| 2 | Non-Veg | **TRUE** |
+
+
+### The XOR Function
