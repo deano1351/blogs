@@ -57,7 +57,7 @@ So, to fill the attendance, we provide the following logical `OR` formula with s
 =OR(logical1, logical2, ... )
 ```
 
-Therefore, let us put the formula **`=OR(B2, C2, D2)`** in cell `E1` and then apply it in subsequent rows. This will result in the updated attendance as shown:
+Therefore, let us put the formula **`=OR(B1, C1, D1)`** in cell `E1` and then apply it in subsequent rows. This will result in the updated attendance as shown:
 
 
 | | A | B | C | D | E |
@@ -95,7 +95,7 @@ The syntax of the logical `AND` function is given below:
 
 To learn how to implemet `AND` function in the Excel, let us take the same student attendance scenario but this time let us consider that if student is absent even a single day then he/she will be marked absent (`FALSE` value).
 
-This time cell `E1` will hold the following formula: **`=AND(B2, C2, D2)`**. This will result in the following attendance sheet where only one student is marked present.
+This time cell `E1` will hold the following formula: **`=AND(B1, C1, D1)`**. This will result in the following attendance sheet where only one student is marked present.
 
 
 | | A | B | C | D | E |
@@ -133,7 +133,7 @@ To implement the `NOT` function, here's the syntax:
 =NOT(logical condition)
 ```
 
-So, we can write a condition to check if people food preference is `Veg` and then later pass the result to the `NOT` function. To achieve this, you can write **`=NOT(A2="Veg")`** in the cell `B1` which will give you the following result:
+So, we can write a condition to check if people food preference is `Veg` and then later pass the result to the `NOT` function. To achieve this, you can write **`=NOT(A1="Veg")`** in the cell `B1` which will give you the following result:
 
 
 | | A | B |
@@ -178,7 +178,7 @@ The syntax for the logical `XOR` in Excel is:
 =XOR(logical1, logical2, ... )
 ```
 
-To solve the given scenario, we can implement `XOR` function starting with **`=XOR(A2, B2, C2)`** formula in the cell `D1` and stretching it to the subsequent rows. This results in the given result:
+To solve the given scenario, we can implement `XOR` function starting with **`=XOR(A1, B1, C1)`** formula in the cell `D1` and stretching it to the subsequent rows. This results in the given result:
 
 
 | | A | B | C | D |
@@ -212,7 +212,7 @@ Consider a case where you are provided with the data of students marks. You need
 | 5 | 87          | ? |
 | 6 | 222         | ? |
 
-This can be achieved by using the logical `IF` function. You can write the given formula **`=IF(A2 <= 150, "FAIL", "PASS")`** in the cell `B1` and apply the formula in the subsequent rows to achieve the following result:
+This can be achieved by using the logical `IF` function. You can write the given formula **`=IF(A1 <= 150, "FAIL", "PASS")`** in the cell `B1` and apply the formula in the subsequent rows to achieve the following result:
 
 
 |   |      A      |   B    |
@@ -226,3 +226,37 @@ This can be achieved by using the logical `IF` function. You can write the given
 | 6 | 222         | **PASS**   |
 
 ### The IFERROR Function
+The logical `IFEEROR` function is used to catch an error and handle it. If the formula doesn't result in the error then the formula is evaluated else the second argument is displayed.
+
+The syntax of the `IFERROR` function in Excel is given below:
+
+
+```
+=IFERROR(value, value_if_error)
+```
+Let's consider an example where you are given with two inputs (both numeric) and you need to divide input A with input B. We will try to arrive at a Zero Division Error and wherever it occurs we replace the output with value `10`. Here's the data to start with:
+
+
+| | A | B | C |
+| --- | --- | --- | --- |
+| | **Input A** | **Input B** |   **Output**    |
+| 1 |      54 |      23 | ? |
+| 2 |      21 |      45 | ? |
+| 3 |     789 |       2 | ? |
+| 4 |      98 |       0 | ? |
+| 5 |     451 |     584 | ? |
+| 6 |      65 |      12 | ? |
+
+To solve this problem, we can use the `IFERROR` function by writing its formula in cell `C1` as `=IFERROR(A1/B1, 10)` which results in the following table:
+
+
+| | A | B | C |
+| --- | --- | --- | --- |
+| | **Input A** | **Input B** |   **Output**    |
+| 1 |      54 |      23 | 2.347826087 |
+| 2 |      21 |      45 | 0.466666667 |
+| 3 |     789 |       2 |       394.5 |
+| 4 |      98 |       0 |          10 |
+| 5 |     451 |     584 | 0.772260274 |
+| 6 |      65 |      12 | 5.416666667 |
+
