@@ -257,3 +257,65 @@ Therefore, let us put the formula **`=HOUR(B1)`** in cell `C1` and then apply it
 | 1 | 19-08-2019 | 0 | 
 | 2 | 05-11-2019 7:45 | 7 |
 | 3 | 18-07-2019 1:15| 1 |
+
+### The ISOWEEKNUM Function
+The `ISOWEEKNUM` function gives ISO week number of the year for a given date
+
+The `ISOWEEKNUM` function has the following syntax:
+
+
+```
+=ISOWEEKNUM(date)
+```
+Let us consider a scenario where you can learn how to implement the `ISOWEEKNUM` function in Excel.  Consider the example given below.
+
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **DATE** | **WEEK NUMBER** |
+| 1 | 19-01-2019 | ? | 
+| 2 | 05-11-2019 | ? |
+| 3 | 18-07-2019 | ? |
+
+Therefore, let us put the formula **`=ISOWEEKNUM(B1)`** in cell `C1` and then apply it in subsequent rows.The result value will be updated as below:
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **DATE** | **WEEK NUMBER** |
+| 1 | 19-01-2019 | 3 | 
+| 2 | 05-11-2019 | 45 |
+| 3 | 18-07-2019 | 29 |
+
+### The MINUTE and MONTH Function
+The `MINUTE` and `MONTH` function converts serial number into a minute and month repectively.
+The `MINUTE` function has the following syntax:
+
+
+```
+=MINUTE(serial_number)
+```
+
+The `MONTH` function has the following syntax:
+
+
+```
+=MONTH(serial_number)
+```
+Let us consider a scenario where you can learn how to implement the `MINUTE` and `MONTH` function in Excel.  Consider the example given below.
+
+| A | B | C | D | E |
+| --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **TIME** | **MINUTE** | **MONTH** |
+| 1 | 19-08-2019 | 19-01-2019 7:45:00 | ? | ? |
+| 2 | 05-11-2019 | 19-06-2019 9:15:00 | ? | ? |
+| 3 | 18-07-2019 | 18-07-2019 3:05:00 | ? | ? |
+
+Therefore, let us put the formula **`=MINUTE(C1)`** in cell `D1` and  **`=MONTH(B1)`** in cell `E1` and then apply it in subsequent rows.The result value will be updated as below:
+
+| A | B | C | D | E |
+| --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **TIME** | **MINUTE** | **MONTH** |
+| 1 | 19-08-2019 | 19-01-2019 7:45:00 | 45 | 8 |
+| 2 | 05-11-2019 | 19-06-2019 9:15:00 | 15 | 11 |
+| 3 | 18-07-2019 | 18-07-2019 3:05:00 | 5 | 7 |
+
