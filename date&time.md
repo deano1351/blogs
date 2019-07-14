@@ -169,4 +169,91 @@ Therefore, let us put the formula **`=DAYS(C1,B1)`** in cell `D1` and then apply
 | 3 | 18-07-2019 | 18-06-2019 | 30 |
 
 ### The EDATE Function
-The `EDATE` function gives the serial number/ date that represents the date that is the indicated number of months before or after a specified date (the start_date). 
+The `EDATE` function gives the serial number/ date and that date is  the date before or after a specified date (the start_date). 
+The `EDATE` function has the following syntax:
+
+
+```
+=EDATE(start_date, months)
+```
+Let us consider a scenario where you can learn how to implement the `EDATE` function in Excel.  Consider the example given below.
+
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **MONTH** | **NEW_DATE** |
+| 1 | 19-08-2019 | 1 | ? |
+| 2 | 05-11-2019 | -1 | ? |
+| 3 | 18-07-2019 | 2 | ? |
+
+Therefore, let us put the formula **`=EDATE(B1,C1)`** in cell `D1` and then apply it in subsequent rows. This function will return the date after adding **MONTH** value to the date mentioned in the **DATE** and result value will be updated as below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **MONTH** | **NEW_DATE** |
+| 1 | 19-08-2019 | 1 | 19-09-2019 |
+| 2 | 05-11-2019 | -1 | 05-10-2019 |
+| 3 | 18-07-2019 | 2 | 18-09-2019 |
+
+If the output is serial number, right click that cell value-> click on Format Cells...->choose the format of date you want.
+
+### The EOMONTH Function
+The `EOMONTH` function gives the last day of the month that is the indicated number of months before or after the start_date as the serial number.
+
+The `EOMONTH` function has the following syntax:
+
+
+```
+=EOMONTH(start_date, months)
+```
+Let us consider a scenario where you can learn how to implement the `EOMONTH` function in Excel.  Consider the example given below.
+
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **MONTH** | **NEW_DATE** |
+| 1 | 19-08-2019 | 1 | ? |
+| 2 | 05-11-2019 | -1 | ? |
+| 3 | 18-07-2019 | 2 | ? |
+
+Therefore, let us put the formula **`=EOMONTH(B1,C1)`** in cell `D1` and then apply it in subsequent rows.The result value will be updated as below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **MONTH** | **NEW_DATE** |
+| 1 | 19-08-2019 | 1 | 30-09-2019 |
+| 2 | 05-11-2019 | -1 | 31-10-2019 |
+| 3 | 18-07-2019 | 2 | 30-09-2019 |
+
+If the output is serial number, right click that cell value-> click on Format Cells...->choose the format of date you want.
+
+### The HOUR Function
+The `HOUR` function gives the hour of a time value. The hour value ranges from 0 (12:00 A.M.) to 23 (11:00 P.M.).
+
+The `HOUR` function has the following syntax:
+
+
+```
+=HOUR(serial_number)
+```
+
+Let us consider a scenario where you can learn how to implement the `HOUR` function in Excel.  Consider the example given below.
+
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **VALUE** | **HOUR** |
+| 1 | 19-08-2019 | ? | 
+| 2 | 05-11-2019 7:45 | ? |
+| 3 | 18-07-2019 1:15| ? |
+
+
+Therefore, let us put the formula **`=HOUR(B1)`** in cell `C1` and then apply it in subsequent rows.The result value will be updated as below:
+
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **VALUE** | **HOUR** |
+| 1 | 19-08-2019 | 0 | 
+| 2 | 05-11-2019 7:45 | 7 |
+| 3 | 18-07-2019 1:15| 1 |
