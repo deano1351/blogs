@@ -304,7 +304,7 @@ The `MONTH` function has the following syntax:
 Let us consider a scenario where you can learn how to implement the `MINUTE` and `MONTH` function in Excel.  Consider the example given below.
 
 | A | B | C | D | E |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | **SR. NO.** | **DATE** | **TIME** | **MINUTE** | **MONTH** |
 | 1 | 19-08-2019 | 19-01-2019 7:45:00 | ? | ? |
 | 2 | 05-11-2019 | 19-06-2019 9:15:00 | ? | ? |
@@ -313,7 +313,7 @@ Let us consider a scenario where you can learn how to implement the `MINUTE` and
 Therefore, let us put the formula **`=MINUTE(C1)`** in cell `D1` and  **`=MONTH(B1)`** in cell `E1` and then apply it in subsequent rows.The result value will be updated as below:
 
 | A | B | C | D | E |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | **SR. NO.** | **DATE** | **TIME** | **MINUTE** | **MONTH** |
 | 1 | 19-08-2019 | 19-01-2019 7:45:00 | 45 | 8 |
 | 2 | 05-11-2019 | 19-06-2019 9:15:00 | 15 | 11 |
