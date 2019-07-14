@@ -140,3 +140,33 @@ Therefore, let us put the formula **`=DAYS(B1,C1)`** in cell `D1` and then apply
 | 2 | 05-11-2019 | 05-11-2018 | 365 |
 | 3 | 18-07-2019 | 18-06-2019 | 30 |
 
+### The DAYS360 Function
+The `DAYS360` function is used to calculate the number of days between two given dates which is based on a 360-day year (twelve 30-day months).
+The `DAYS360` function has the following syntax:
+
+
+```
+=DAYS360(start_date,end_date,[method])
+```
+Let us consider a scenario where you can learn how to implement the `DAYS360` function in Excel.  Consider the example given below.
+
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **SR. NO.** | **END_DATE** | **START_DATE** | **DAY** |
+| 1 | 19-08-2019 | 18-08-2019 | ? |
+| 2 | 05-11-2019 | 05-11-2018 | ? |
+| 3 | 18-07-2019 | 18-06-2019 | ? |
+
+Therefore, let us put the formula **`=DAYS(C1,B1)`** in cell `D1` and then apply it in subsequent rows. The third argument is optional which is a logical value depending on choice to use the U.S. or European method for the calculation. It will calculate the days between the **END_DATE** and **START_DATE** and the result in **DAY** will be updated as shown below:
+
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **SR. NO.** | **END_DATE** | **START_DATE** | **DAY** |
+| 1 | 19-08-2019 | 18-08-2019 | 1 |
+| 2 | 05-11-2019 | 05-11-2018 | 360 |
+| 3 | 18-07-2019 | 18-06-2019 | 30 |
+
+### The EDATE Function
+The `EDATE` function gives the serial number/ date that represents the date that is the indicated number of months before or after a specified date (the start_date). 
