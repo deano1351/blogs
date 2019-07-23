@@ -48,3 +48,31 @@ The result will be updated as shown below:
 | 2 | 01-Jan-19 | 31-Jan-2019 | 26-Jan-2019 | 23 |
 | 3 | 24-Jul-19 | 23-Aug-2019 | 15-Aug-2019 | 22 |
 
+### The NETWORKDAYS.INTL Function
+The `NETWORKDAYS.INTL` function is very similar to the `NETWORKDAYS` function. This function also gives the total number of workdays between two dates but has a parameter that avails you the option to select the day/days that you want to select as weekend which makes it different than the `NETWORKDAYS` function.
+
+The `NETWORKDAYS.INTL` function has the following syntax:
+
+
+```
+=NETWORKDAYS.INTL(start_date, end_date, [weekend], [holidays])
+```
+
+The first argument `start_date` and the second argument `end_date` are **required** arguments in the function whereas the third argument `weekend` and the fourth argument `holidays` are optional. The value of the third argument `weekend` represents the following days.
+
+| **weekened_value** | **weekend_days** |
+| --- | --- |
+| 1 or omitted | Saturday, Sunday |
+| 2 | Sunday, Monday |
+| 3 | Monday, Tuesday |
+| 4 | Tuesday, Wednesday |
+| 5 | Wednesday, Thursday |
+| 6 | Thursday, Friday |
+| 7 | Friday, Saturday |
+| 11 | Sunday only |
+| 12 | Monday only |
+| 13 | Tuesday only |
+| 14 | Wednesday only |
+| 15 | Thursday only |
+| 16 | Friday only |
+| 17 | Saturday only |
