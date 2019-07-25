@@ -76,3 +76,22 @@ The first argument `start_date` and the second argument `end_date` are **require
 | 15 | Thursday only |
 | 16 | Friday only |
 | 17 | Saturday only |
+
+Let us consider a scenario where you can learn how to implement the `NETWORKDAYS.INTL` function in Excel. Consider the example given below:
+
+
+| A | B | C | D | E | F |
+| --- | --- | --- | --- | --- | --- |
+| **Sr. No.** | **Start_Date** | **End_Date** | **Weekend** | **Holiday** | **WorkDays** |
+| 1 | 23-Jul-19 | 30-Jul-19 | 1 |   | =NETWORKDAYS.INTL(B1,C1,D1) |
+| 2 | 01-Jan-19 | 31-Jan-2019 | 2 | 26-Jan-2019 | =NETWORKDAYS.INTL(B2,C2,D2,E2) |
+| 3 | 24-Jul-19 | 23-Aug-2019 | 3 | 15-Aug-2019 | =NETWORKDAYS.INTL(B3,C3,D3,E3) |
+
+The result will be updated as shown below:
+
+| A | B | C | D | E | F |
+| --- | --- | --- | --- | --- | --- |
+| **Sr. No.** | **Start_Date** | **End_Date** | **Weekend** | **Holiday** | **WorkDays** |
+| 1 | 23-Jul-19 | 30-Jul-19 | 1 |   | 6 |
+| 2 | 01-Jan-19 | 31-Jan-2019 | 2 | 26-Jan-2019 | 22 |
+| 3 | 24-Jul-19 | 23-Aug-2019 | 3 | 15-Aug-2019 | 22 |
