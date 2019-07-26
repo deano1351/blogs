@@ -157,9 +157,9 @@ Let us consider a scenario where you can learn how to implement the `TIME` funct
 | A | B | C | D | E |
 | --- | --- | --- | --- | --- |
 | **Sr. No.** | **Hour** | **Minute** | **Second** | **Output** |
-| 1 | 12 | 30 | 45 | =TIME(A1,B1,C1) |
-| 2 | 12 | 0 | 0 | =TIME(A2,B2,C2) |
-| 3 | 14 | 24 | 34 | =TIME(A3,B3,C3) | 
+| 1 | 12 | 30 | 45 | =TIME(B1,C1,D1) |
+| 2 | 12 | 0 | 0 | =TIME(B2,C2,D2) |
+| 3 | 14 | 24 | 34 | =TIME(B3,C3,D3) | 
 
 The result will be updated as shown below:
 
@@ -255,18 +255,18 @@ Let us consider a scenario where you can learn how to implement the `WEEKDAY` fu
 | A | B | C | D |
 | --- | --- | --- | --- |
 | **Sr. No.** | **Date** | **Function** | **Output** | 
-| 1 | 26-Jul-19 | =weekday(A1) | ? |
-| 2| 26-Jul-19 | =weekday(A2,2) | ? |
-| 3 | 26-Jul-19 | =weekday(A3,3) | ? |
+| 1 | 26-Jul-19 | =weekday(B1) | ? |
+| 2| 26-Jul-19 | =weekday(B2,2) | ? |
+| 3 | 26-Jul-19 | =weekday(B3,3) | ? |
 
 The result will be updated as shown below:
 
 | A | B | C | D |
 | --- | --- | --- | --- |
 | **Sr. No.** | **Date** | **Function** | **Output** | 
-| 1 | 26-Jul-19 | =weekday(A1) | 6 |
-| 2| 26-Jul-19 | =weekday(A2,2) | 5 |
-| 3 | 26-Jul-19 | =weekday(A3,3) | 4 |
+| 1 | 26-Jul-19 | =weekday(B1) | 6 |
+| 2| 26-Jul-19 | =weekday(B2,2) | 5 |
+| 3 | 26-Jul-19 | =weekday(B3,3) | 4 |
 
 ### The WEEKNUM Function
 The `WEEKNUM` returns the week number of the given date. The input provided to the function must be in date format else it will cause an error.
@@ -296,18 +296,18 @@ Let us consider a scenario where you can learn how to implement the `WEEKNUM` fu
 | A | B | C | D |
 | --- | --- | --- | --- |
 | **Sr. No.** | **Date** | **Function** | **Output** | 
-| 1 | 26-Jul-19 | =weeknum(A1) | ? |
-| 2| 26-Jul-19 | =weeknum(A2,2) | ? |
-| 3 | 26-Jul-19 | =weeknum(A3,13) | ? |
+| 1 | 26-Jul-19 | =weeknum(B1) | ? |
+| 2| 26-Jul-19 | =weeknum(B2,2) | ? |
+| 3 | 26-Jul-19 | =weeknum(B3,13) | ? |
 
 The result will be updated as shown below:
 
 | A | B | C | D |
 | --- | --- | --- | --- |
 | **Sr. No.** | **Date** | **Function** | **Output** | 
-| 1 | 26-Jul-19 | =weeknum(A1)  | 30 |
-| 2| 26-Jul-19 | =weeknum(A2,2) | 30 |
-| 3 | 26-Jul-19 | =weeknum(A3,13) | 31 |
+| 1 | 26-Jul-19 | =weeknum(B1)  | 30 |
+| 2| 26-Jul-19 | =weeknum(B2,2) | 30 |
+| 3 | 26-Jul-19 | =weeknum(B3,13) | 31 |
 
 ### The WORKDAY Function
 The `WORKDAY` function returns a number that represents a date that is the indicated number of working days before or after a date (the starting date). Also, working days exclude all weekends and any dates which are identified as holidays.
@@ -325,9 +325,9 @@ Let us consider a scenario where you can learn how to implement the `WORKKDAY` f
 | A | B | C | D | E |
 | --- | --- | --- | --- | --- |
 | **Sr. No.** | **Date** | **Working_Days** | **Holiday** | **OUTPUT** |
-| 1 | 26-07-2019 | 30 | 15-08-2019 | ? |
-| 2 | 26-07-2019 | 60 | 16-08-2019 | ? |
-| 3 | 26-07-2019 | 90 | 17-08-2019 | ? |
+| 1 | 26-07-2019 | 30 | 15-08-2019 | =WORKDAY(B1,C1,D1) |
+| 2 | 26-07-2019 | 60 | 16-08-2019 | =WORKDAY(B2,C2,D2) |
+| 3 | 26-07-2019 | 90 | 17-08-2019 | =WORKDAY(B3,C3,D3) |
 
 The result will be updated as shown below:
 
@@ -371,9 +371,9 @@ Let us consider a scenario where you can learn how to implement the `WORKDAY.INT
 | A | B | C | D | E | F |
 | --- | --- | --- | --- | --- | --- |
 | **SR. NO.** | **DATE** | **WORKING_DAYS** | **HOLIDAY** | **WEEKEND_NUMBER_VALUES** | **OUTPUT** |
-| 1 | 26-07-2019 | 30 | 15-08-2019 | 2 | ? |
-| 2 | 26-07-2019 | 60 | 16-08-2019 | 3 | ? |
-| 3 | 26-07-2019 | 90 | 17-08-2019 | 7 | ? |
+| 1 | 26-07-2019 | 30 | 15-08-2019 | 2 | =WORKDAY.INTL(B1,C1,E1,D1) |
+| 2 | 26-07-2019 | 60 | 16-08-2019 | 3 | =WORKDAY.INTL(B2,C2,E2,D2) |
+| 3 | 26-07-2019 | 90 | 17-08-2019 | 7 | =WORKDAY.INTL(B3,C3,E3,D3) |
 
 The result will be updated as shown below:
 
@@ -398,18 +398,18 @@ Let us consider a scenario where you can learn how to implement the `YEAR` funct
 | A | B | C | D |
 | --- | --- | --- | --- |
 | **Sr. No.** | **Date** | **Function** | **Output** |
-| 1 | 26-Jul-2019 | =year(A1) | ? |
-| 1 | 24-Aug-2016 | =year(A2) | ? |
-| 1 | 21-Jul-2000 | =year(A3) | ? |
+| 1 | 26-Jul-2019 | =year(B1) | ? |
+| 1 | 24-Aug-2016 | =year(B2) | ? |
+| 1 | 21-Jul-2000 | =year(B3) | ? |
 
 The result will be updated as shown below:
 
 | A | B | C | D |
 | --- | --- | --- | --- |
 | **Sr. No.** | **Date** | **Function** | **Output** |
-| 1 | 26-Jul-2019 | =year(A1) | 2019 |
-| 1 | 24-Aug-2016 | =year(A2) | 2016 |
-| 1 | 21-Jul-2000 | =year(A3) | 2000 |
+| 1 | 26-Jul-2019 | =year(B1) | 2019 |
+| 1 | 24-Aug-2016 | =year(B2) | 2016 |
+| 1 | 21-Jul-2000 | =year(B3) | 2000 |
 
 ### The YEARFRAC Function
 The `YEARFRAC` function returns the year fraction that represents the number of whole days between start_date and end_date.
@@ -425,18 +425,18 @@ The first and second arguments are `required` whereas the third argument is opti
 | A | B | C | D | E |
 | --- | --- | --- | --- | --- |
 | **Sr. No.** | **Start_Date** | **End_Date** | **Function** | **Output** |
-| 1 | 26-Jul-2019 | 15-08-2019 | =yearfrac(A1,B1) | ? |
-| 1 | 26-Jul-2019 | 16-08-2019 | =yearfrac(A2,B2) | ? |
-| 1 | 26-Jul-2019 | 17-08-2019 | =yearfrac(A3,B3) | ? |
+| 1 | 26-Jul-2019 | 15-08-2019 | =yearfrac(B1,C1) | ? |
+| 1 | 26-Jul-2019 | 16-08-2019 | =yearfrac(B2,C2) | ? |
+| 1 | 26-Jul-2019 | 17-08-2019 | =yearfrac(B3,C3) | ? |
 
 The result will be updated as shown below:
 
 | A | B | C | D | E |
 | --- | --- | --- | --- | --- |
 | **Sr. No.** | **Start_Date** | **End_Date** | **Function** | **Output** |
-| 1 | 26-Jul-2019 | 15-08-2019 | =yearfrac(A1,B1) | 0.052777778 |
-| 1 | 26-Jul-2019 | 16-08-2019 | =yearfrac(A2,B2) | 0.055555556 |
-| 1 | 26-Jul-2019 | 17-08-2019 | =yearfrac(A3,B3) | 0.058333333 |
+| 1 | 26-Jul-2019 | 15-08-2019 | =yearfrac(B1,C1) | 0.052777778 |
+| 2 | 26-Jul-2019 | 16-08-2019 | =yearfrac(B2,C2) | 0.055555556 |
+| 3 | 26-Jul-2019 | 17-08-2019 | =yearfrac(B3,C3) | 0.058333333 |
 
 ## Conclusion
 With the end of this guide, you have learned all the date and time functions with simple examples in Excel 2019. 
