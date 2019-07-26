@@ -385,3 +385,56 @@ The result will be updated as shown below:
 | 3 | 26-07-2019 | 90 | 17-08-2019 | 7 | 28-11-2019 |
 
 ### The YEAR Function
+The `YEAR` function returns the year corresponding to a date and has a range 1900-9999.
+
+The `YEAR` function has the following syntax:
+
+
+```
+=YEAR(serial_number)
+```
+Let us consider a scenario where you can learn how to implement the `YEAR` function in Excel. Consider the example given below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Function** | **Output** |
+| 1 | 26-Jul-2019 | =year(A1) | ? |
+| 1 | 24-Aug-2016 | =year(A2) | ? |
+| 1 | 21-Jul-2000 | =year(A3) | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Function** | **Output** |
+| 1 | 26-Jul-2019 | =year(A1) | 2019 |
+| 1 | 24-Aug-2016 | =year(A2) | 2016 |
+| 1 | 21-Jul-2000 | =year(A3) | 2000 |
+
+### The YEARFRAC Function
+The `YEARFRAC` function returns the year fraction that represents the number of whole days between start_date and end_date.
+
+The `YEARFRAC` function has the following syntax:
+
+
+```
+=YEARFRAC(start_date, end_date, [basis])
+```
+The first and second arguments are `required` whereas the third argument is optional. Let us consider a scenario where you can learn how to implement the `YEARFRAC` function in Excel. Consider the example given below:
+
+| A | B | C | D | E |
+| --- | --- | --- | --- | --- |
+| **Sr. No.** | **Start_Date** | **End_Date** | **Function** | **Output** |
+| 1 | 26-Jul-2019 | 15-08-2019 | =yearfrac(A1,B1) | ? |
+| 1 | 26-Jul-2019 | 16-08-2019 | =yearfrac(A2,B2) | ? |
+| 1 | 26-Jul-2019 | 17-08-2019 | =yearfrac(A3,B3) | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D | E |
+| --- | --- | --- | --- | --- |
+| **Sr. No.** | **Start_Date** | **End_Date** | **Function** | **Output** |
+| 1 | 26-Jul-2019 | 15-08-2019 | =yearfrac(A1,B1) | 0.052777778 |
+| 1 | 26-Jul-2019 | 16-08-2019 | =yearfrac(A2,B2) | 0.055555556 |
+| 1 | 26-Jul-2019 | 17-08-2019 | =yearfrac(A3,B3) | 0.058333333 |
+
