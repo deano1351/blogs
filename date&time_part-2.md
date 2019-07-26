@@ -1,5 +1,5 @@
 ## Introduction
-In this guide, you will learn how to work with rest of the time and date functions in Microsoft Excel 2019 that were left in the first part of the guide. There are various time and date functions which are present in the Excel 2019 version, as mentioned below:
+This guide is in continuation of the [Date and Time Function in Excel - Part 1](). In this guide, you will learn how to work with the rest of the time and date functions in Microsoft Excel 2019. There are various time and date functions which are present in the Excel 2019 version, as mentioned below:
 
 - NETWORKDAYS
 - NETWORKDAYS.INTL
@@ -49,7 +49,7 @@ The result will be updated as shown below:
 | 3 | 24-Jul-19 | 23-Aug-2019 | 15-Aug-2019 | 22 |
 
 ### The NETWORKDAYS.INTL Function
-The `NETWORKDAYS.INTL` function is very similar to the `NETWORKDAYS` function. This function also gives the total number of workdays between two dates but has a parameter that avails you the option to select the day/days that you want to select as weekend which makes it different than the `NETWORKDAYS` function.
+The `NETWORKDAYS.INTL` function is very similar to the `NETWORKDAYS` function. This function also gives the total number of workdays between two dates but has a parameter that avails you the option to select the day(s) that you want to select as weekend which makes it different than the `NETWORKDAYS` function.
 
 The `NETWORKDAYS.INTL` function has the following syntax:
 
@@ -199,7 +199,7 @@ The result will be updated as shown below:
 | 3 | =TIMEVALUE("04:30 PM") | 0.6875 |
 
 ### The TODAY Function
-The `TODAY` funcion returns current date if the cell was formatted as general before writing function in it. If the cell is formatted as number, it will return serial nunmber.
+The `TODAY` function returns current date if the cell was formatted as general before writing function in it. If the cell is formatted as number, it will return serial nunmber.
 
 The `TODAY` function has the following syntax:
 
@@ -227,7 +227,7 @@ The result will be updated as shown below:
 | 3 | =TODAY() - 30 | 26-06-2019 |
 
 ### The WEEKDAY Function
-The `WEEKDAY` function returns day of the week for a given date as input. The day of the week is returned as as an integer, ranging from 1 (Sunday) to 7 (Saturday), by default.
+The `WEEKDAY` function returns day of the week for a given date as input. The day of the week is returned as an integer, ranging from 1 (Sunday) to 7 (Saturday), by default.
 
 The `WEEKDAY` function has the following syntax:
 
@@ -438,3 +438,5 @@ The result will be updated as shown below:
 | 1 | 26-Jul-2019 | 16-08-2019 | =yearfrac(A2,B2) | 0.055555556 |
 | 1 | 26-Jul-2019 | 17-08-2019 | =yearfrac(A3,B3) | 0.058333333 |
 
+## Conclusion
+With the end of this guide, you have learned all the date and time functions with simple examples in Excel 2019. 
