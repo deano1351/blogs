@@ -250,3 +250,20 @@ First argument in the function is `required` whereas the second argument is opti
 | 16 | Numbers 1 (Saturday) through 7 (Friday). |
 | 17 | Numbers 1 (Sunday) through 7 (Saturday). |
 
+Let us consider a scenario where you can learn how to implement the `WEEKDAY` function in Excel. Consider the example given below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Function** | **Output** | 
+| 1 | 26-Jul-19 | =weekday(A1) | ? |
+| 2| 26-Jul-19 | =weekday(A2,2) | ? |
+| 3 | 26-Jul-19 | =weekday(A3,3) | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Function** | **Output** | 
+| 1 | 26-Jul-19 | =weekday(A1) | 6 |
+| 2| 26-Jul-19 | =weekday(A2,2) | 5 |
+| 3 | 26-Jul-19 | =weekday(A3,3) | 4 |
