@@ -279,7 +279,7 @@ The `WEEKNUM` function has the following syntax:
 First argument in the function is `required` whereas the second argument is optional and is a number that determines on which day the week begins. The default value is 1. Consider the table given below for second argument.
 
 | Return_type  | Week begins on | System |
-| --- | --- |
+| --- | --- | --- |
 | 1 or omitted | Sunday | 1 |
 | 2 | Monday | 1 |
 | 11 | Monday | 1 |
