@@ -157,9 +157,9 @@ Let us consider a scenario where you can learn how to implement the `TIME` funct
 | A | B | C | D | E |
 | --- | --- | --- | --- | --- |
 | **Sr. No.** | **Hour** | **Minute** | **Second** | **Output** |
-| 12 | 30 | 45 | =TIME(A1,B1,C1) |
-| 12 | 0 | 0 | =TIME(A2,B2,C2) |
-| 14 | 24 | 34 | =TIME(A3,B3,C3) | 
+| 1 | 12 | 30 | 45 | =TIME(A1,B1,C1) |
+| 2 | 12 | 0 | 0 | =TIME(A2,B2,C2) |
+| 3 | 14 | 24 | 34 | =TIME(A3,B3,C3) | 
 
 The result will be updated as shown below:
 
@@ -184,7 +184,69 @@ Let us consider a scenario where you can learn how to implement the `TIMEVALUE` 
 
 | A | B | C |
 | --- | --- | --- |
-| **Sr. No.** | **Time_Text** | **Function** | 
-| 1 | " | =SECOND(B1) |
-| 2| "16:28 PM" | =SECOND(B2) |
-| 3 | "12:20:30 PM" | =SECOND(B3) |
+| **Sr. No.** | **Function** | **Output** | 
+| 1 | =TIMEVALUE("01:30 AM") | ? |
+| 2 | =TIMEVALUE("04:30 AM") | ? |
+| 3 | =TIMEVALUE("04:30 PM") | ? |
+
+The result will be updated as shown below:
+
+| A | B | C |
+| --- | --- | --- |
+| **Sr. No.** | **Function** | **Output** | 
+| 1 | =TIMEVALUE("01:30 AM") | 0.0625 |
+| 2| =TIMEVALUE("04:30 AM") | 0.1875 |
+| 3 | =TIMEVALUE("04:30 PM") | 0.6875 |
+
+### The TODAY Function
+The `TODAY` funcion returns current date if the cell was formatted as general before writing function in it. If the cell is formatted as number, it will return serial nunmber.
+
+The `TODAY` function has the following syntax:
+
+
+```
+=TODAY()
+```
+The `TODAY` function has no argument. 
+Let us consider a scenario where you can learn how to implement the `TODAY` function in Excel. Consider the example given below:
+
+| A | B | C |
+| --- | --- | --- |
+| **Sr. No.** | **Function** | **Output** | 
+| 1 | =TODAY() | ? |
+| 2| =TOADY() + 30 | ? |
+| 3 | =TODAY() -30 | ? |
+
+The result will be updated as shown below:
+
+| A | B | C |
+| --- | --- | --- |
+| **Sr. No.** | **Function** | **Output** | 
+| 1 | =TODAY() | 26-07-2019 |
+| 2| =TOADY() + 30 | 25-08-2019 |
+| 3 | =TODAY() - 30 | 26-06-2019 |
+
+### The WEEKDAY Function
+The `WEEKDAY` function returns day of the week for a given date as input. The day of the week is returned as as an integer, ranging from 1 (Sunday) to 7 (Saturday), by default.
+
+The `WEEKDAY` function has the following syntax:
+
+
+```
+=WEEKDAY(serial_number/date,[return_type])
+```
+First argument in the function is `required` whereas the second argument is optional and is a number that determines the type of return value. Consider the table given below for second argument.
+
+| Return_type | Number returned |
+| --- | --- |
+| 1 or omitted | Numbers 1 (Sunday) through 7 (Saturday). Behaves like previous versions of Microsoft Excel. |
+| 2 | Numbers 1 (Monday) through 7 (Sunday). |
+| 3 | Numbers 0 (Monday) through 6 (Sunday). |
+| 11 | Numbers 1 (Monday) through 7 (Sunday). |
+| 12 | Numbers 1 (Tuesday) through 7 (Monday). |
+| 13 | Numbers 1 (Wednesday) through 7 (Tuesday). |
+| 14 | Numbers 1 (Thursday) through 7 (Wednesday). |
+| 15 | Numbers 1 (Friday) through 7 (Thursday). |
+| 16 | Numbers 1 (Saturday) through 7 (Friday). |
+| 17 | Numbers 1 (Sunday) through 7 (Saturday). |
+
