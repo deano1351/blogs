@@ -267,3 +267,121 @@ The result will be updated as shown below:
 | 1 | 26-Jul-19 | =weekday(A1) | 6 |
 | 2| 26-Jul-19 | =weekday(A2,2) | 5 |
 | 3 | 26-Jul-19 | =weekday(A3,3) | 4 |
+
+### The WEEKNUM Function
+The `WEEKNUM` returns the week number of the given date. The input provided to the function must be in date format else it will cause an error.
+The `WEEKNUM` function has the following syntax:
+
+
+```
+=WEEKNUM(serial_number,[return_type])
+```
+First argument in the function is `required` whereas the second argument is optional and is a number that determines on which day the week begins. The default value is 1. Consider the table given below for second argument.
+
+| Return_type  | Week begins on | System |
+| --- | --- |
+| 1 or omitted | Sunday | 1 |
+| 2 | Monday | 1 |
+| 11 | Monday | 1 |
+| 12 | Tuesday | 1 |
+| 13 | Wednesday | 1 |
+| 14 | Thursday | 1 |
+| 15 | Friday | 1 |
+| 16 | Saturday | 1 |
+| 17 | Sunday | 1 |
+| 21 | Monday | 2 |
+
+Let us consider a scenario where you can learn how to implement the `WEEKNUM` function in Excel. Consider the example given below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Function** | **Output** | 
+| 1 | 26-Jul-19 | =weeknum(A1) | ? |
+| 2| 26-Jul-19 | =weeknum(A2,2) | ? |
+| 3 | 26-Jul-19 | =weeknum(A3,13) | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D |
+| --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Function** | **Output** | 
+| 1 | 26-Jul-19 | =weeknum(A1)  | 30 |
+| 2| 26-Jul-19 | =weeknum(A2,2) | 30 |
+| 3 | 26-Jul-19 | =weeknum(A3,13) | 31 |
+
+### The WORKDAY Function
+The `WORKDAY` function returns a number that represents a date that is the indicated number of working days before or after a date (the starting date). Also, working days exclude all weekends and any dates which are identified as holidays.
+
+The `WORKKDAY` function has the following syntax:
+
+
+```
+=WORKDAY(start_date, days, [holidays])
+```
+The first and the second argument are `required` whereas the third argument is optional. You can use the third argument when you have the list of holidays that you want to include for calculation.
+
+Let us consider a scenario where you can learn how to implement the `WORKKDAY` function in Excel. Consider the example given below:
+
+| A | B | C | D | E |
+| --- | --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Working_Days** | **Holiday** | **OUTPUT** |
+| 1 | 26-07-2019 | 30 | 15-08-2019 | ? |
+| 2 | 26-07-2019 | 60 | 16-08-2019 | ? |
+| 3 | 26-07-2019 | 90 | 17-08-2019 | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D | E |
+| --- | --- | --- | --- | --- |
+| **Sr. No.** | **Date** | **Working_Days** | **Holiday** | **OUTPUT** |
+| 1 | 26-07-2019 | 30 | 15-08-2019 | 09-09-2019 |
+| 2 | 26-07-2019 | 60 | 16-08-2019 | 21-10-2019 |
+| 3 | 26-07-2019 | 90 | 17-08-2019 | 29-11-2019 |
+
+### The WORKDAY.INTL Function
+The `WORKDAY.INTL` function returns the serial number of the date/date before or after a specified number of workdays along with the custom weekend parameters. Weekend parameters is used to indicate which and how many days are to be considered as weekend days. Weekend days and any other days that are specified as holidays are not considered as workdays.
+
+The `WORKDAY.INTL` function has the following syntax:
+
+
+```
+=WORKDAY.INTL(start_date, days, [weekend], [holidays])
+```
+The first and second arguments are optional. The third argument and the fourth arguments are optional. The third argument is a weekend number or string that specifies when weekends occur. Weekend number values indicate the following weekend days.
+
+| **weekend-number** | **Weekend days** |
+| --- | --- |
+| 1 or omitted | Saturday, Sunday |
+| 2 | Sunday, Monday |
+| 3 | Monday, Tuesday |
+| 4 | Tuesday, Wednesday |
+| 5 | Wednesday, Thursday |
+| 6 | Thursday, Friday |
+| 7 | Friday, Saturday |
+| 11 | Sunday only |
+| 12 | Monday only |
+| 13 | Tuesday only |
+| 14 | Wednesday only |
+| 15 | Thursday only |
+| 16 | Friday only |
+| 17 | Saturday only |
+
+Let us consider a scenario where you can learn how to implement the `WORKDAY.INTL` function in Excel. Consider the example given below:
+
+| A | B | C | D | E | F |
+| --- | --- | --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **WORKING_DAYS** | **HOLIDAY** | **WEEKEND_NUMBER_VALUES** | **OUTPUT** |
+| 1 | 26-07-2019 | 30 | 15-08-2019 | 2 | ? |
+| 2 | 26-07-2019 | 60 | 16-08-2019 | 3 | ? |
+| 3 | 26-07-2019 | 90 | 17-08-2019 | 7 | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D | E | F |
+| --- | --- | --- | --- | --- | --- |
+| **SR. NO.** | **DATE** | **WORKING_DAYS** | **HOLIDAY** | **WEEKEND_NUMBER_VALUES** | **OUTPUT** |
+| 1 | 26-07-2019 | 30 | 15-08-2019 | 2 | 07-09-2019 |
+| 2 | 26-07-2019 | 60 | 16-08-2019 | 3 | 19-10-2019 |
+| 3 | 26-07-2019 | 90 | 17-08-2019 | 7 | 28-11-2019 |
+
+### The YEAR Function
