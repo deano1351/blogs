@@ -1,5 +1,5 @@
 ## Introduction
-This guide is in continuation of the [Date and Time Function in Excel - Part 1](). In this guide, you will learn how to work with the rest of the time and date functions in Microsoft Excel 2019. There are various time and date functions which are present in the Excel 2019 version, as mentioned below:
+This guide is in continuation of the [Date and Time Function in Excel - Part 1](/guides/working-with-time-date-functions-excel-part-1). In this guide, you will learn how to work with the rest of the time and date functions in Microsoft Excel 2019. There are various time and date functions which are present in the Excel 2019 version, as mentioned below:
 
 - NETWORKDAYS
 - NETWORKDAYS.INTL
@@ -19,7 +19,7 @@ This guide is in continuation of the [Date and Time Function in Excel - Part 1](
 In this section, you will learn about each of these time and date functions through various scenarios.
 
 ### The NETWORKDAYS Function
-The `NETWORKDAYS` function gives the total number of workdays if you provide a start date and an end date. It excludes the weekends and dates that were identified as holidays while returning the ouput.
+The `NETWORKDAYS` function gives the total number of workdays if you provide a start date and an end date. It excludes weekends and dates that are identified as holidays while returning the output.
 
 The `NETWORKDAYS` function has the following syntax:
 
@@ -28,7 +28,7 @@ The `NETWORKDAYS` function has the following syntax:
 =NETWORKDAYS(start_date, end_date, [holidays])
 ```
 
-The arguments `start_date` and `end_date` are **required** arguments in the function. These two arguments reprsent the start date and the end date. The third argument in the function is optional. It can be a range of cells containing dates in `DATE` format or an array constant of the serial numbers as the dates in `DATE` format.
+The arguments `start_date` and `end_date` are **required** arguments in the function. These two arguments represent the start date and the end date. The third argument in the function is optional. It can be a range of cells containing dates in the `DATE` format or an array constant of the serial numbers as the dates in `DATE` format.
 
 Let us consider a scenario where you can learn how to implement the `NETWORKDAYS` function in Excel. Consider the example given below:
 
@@ -49,7 +49,7 @@ The result will be updated as shown below:
 | 3 | 24-Jul-19 | 23-Aug-2019 | 15-Aug-2019 | 22 |
 
 ### The NETWORKDAYS.INTL Function
-The `NETWORKDAYS.INTL` function is very similar to the `NETWORKDAYS` function. This function also gives the total number of workdays between two dates but has a parameter that avails you the option to select the day(s) that you want to select as weekend which makes it different than the `NETWORKDAYS` function.
+The `NETWORKDAYS.INTL` function is very similar to the `NETWORKDAYS` function. This function also gives the total number of workdays between two dates but it also has a parameter that avails you the option to select the day(s) that you want to select as the weekend which makes it different than the `NETWORKDAYS` function.
 
 The `NETWORKDAYS.INTL` function has the following syntax:
 
@@ -58,7 +58,7 @@ The `NETWORKDAYS.INTL` function has the following syntax:
 =NETWORKDAYS.INTL(start_date, end_date, [weekend], [holidays])
 ```
 
-The first argument `start_date` and the second argument `end_date` are **required** arguments in the function whereas the third argument `weekend` and the fourth argument `holidays` are optional. The value of the third argument `weekend` represents the following days.
+The first argument, `start_date`, and the second argument, `end_date`, are **required** arguments in the function whereas the third argument, `weekend`, and the fourth argument, `holidays`, are optional. The value of the third argument, `weekend`, represents the following days:
 
 | **weekened_value** | **weekend_days** |
 | --- | --- |
@@ -97,7 +97,7 @@ The result will be updated as shown below:
 | 3 | 24-Jul-19 | 23-Aug-2019 | 3 | 15-Aug-2019 | 22 |
 
 ### The NOW Function
-The `NOW` function provides us the serial number of current date and time. If the cell format is `General`, the output of the function is adjusted as per your regional date and time setting.
+The `NOW` function provides us the serial number for the  current date and time. If the cell format is `General`, the output of the function is adjusted as per your regional date and time setting.
 
 The `NOW` function has the following syntax:
 
@@ -106,7 +106,7 @@ The `NOW` function has the following syntax:
 =NOW()
 ```
 
-The `NOW` function has no argumnets.
+The `NOW` function has no arguments.
 Let us consider a scenario where you can learn how to implement the `NOW` function in Excel. Consider the example given below:
 
 | **FUNCTION** | **OUTPUT** | **DETAILS** |
@@ -116,7 +116,7 @@ Let us consider a scenario where you can learn how to implement the `NOW` functi
 | =NOW() - 0.5 | 27-07-2019 11:54 | Returns the date and time 12 hours ago (-0.5 days ago) |
 
 ### The SECOND Function
-The `SECOND` function return seconds of a given time value/serial number and it ranges between 0-59.
+The `SECOND` function returns seconds of a given time value/serial number and it ranges between 0-59.
 
 The `SECOND` function has the following syntax:
 
@@ -199,7 +199,7 @@ The result will be updated as shown below:
 | 3 | =TIMEVALUE("04:30 PM") | 0.6875 |
 
 ### The TODAY Function
-The `TODAY` function returns current date if the cell was formatted as general before writing function in it. If the cell is formatted as number, it will return serial nunmber.
+The `TODAY` function returns the current date, if the cell was formatted as “general” before writing the function in it. If the cell is formatted as “number”, it will return a serial number.
 
 The `TODAY` function has the following syntax:
 
@@ -227,7 +227,7 @@ The result will be updated as shown below:
 | 3 | =TODAY() - 30 | 26-06-2019 |
 
 ### The WEEKDAY Function
-The `WEEKDAY` function returns day of the week for a given date as input. The day of the week is returned as an integer, ranging from 1 (Sunday) to 7 (Saturday), by default.
+The `WEEKDAY` function returns the day of the week for a given date as input. The day of the week is returned as an integer, ranging from 1 (Sunday) to 7 (Saturday), by default.
 
 The `WEEKDAY` function has the following syntax:
 
@@ -235,7 +235,7 @@ The `WEEKDAY` function has the following syntax:
 ```
 =WEEKDAY(serial_number/date,[return_type])
 ```
-First argument in the function is `required` whereas the second argument is optional and is a number that determines the type of return value. Consider the table given below for second argument.
+The first argument in the function is `required`, whereas the second argument is optional and is a number that determines the type of return value. Consider the table given below for second argument:
 
 | Return_type | Number returned |
 | --- | --- |
@@ -269,14 +269,14 @@ The result will be updated as shown below:
 | 3 | 26-Jul-19 | =weekday(B3,3) | 4 |
 
 ### The WEEKNUM Function
-The `WEEKNUM` returns the week number of the given date. The input provided to the function must be in date format else it will cause an error.
-The `WEEKNUM` function has the following syntax:
+The `WEEKNUM` returns the week number of the given date. The input provided to the function must be in date format or else it will cause an error.
 
+The `WEEKNUM` function has the following syntax:
 
 ```
 =WEEKNUM(serial_number,[return_type])
 ```
-First argument in the function is `required` whereas the second argument is optional and is a number that determines on which day the week begins. The default value is 1. Consider the table given below for second argument.
+The first argument in the function is `required` whereas the second argument is optional and is a number that determines on which day the week begins. The default value is 1. Consider the table given below for the second argument.
 
 | Return_type  | Week begins on | System |
 | --- | --- | --- |
@@ -318,7 +318,7 @@ The `WORKKDAY` function has the following syntax:
 ```
 =WORKDAY(start_date, days, [holidays])
 ```
-The first and the second argument are `required` whereas the third argument is optional. You can use the third argument when you have the list of holidays that you want to include for calculation.
+The first and the second argument are `required`, whereas the third argument is optional. You can use the third argument when you have a list of holidays that you want to include for calculation.
 
 Let us consider a scenario where you can learn how to implement the `WORKKDAY` function in Excel. Consider the example given below:
 
@@ -339,15 +339,14 @@ The result will be updated as shown below:
 | 3 | 26-07-2019 | 90 | 17-08-2019 | 29-11-2019 |
 
 ### The WORKDAY.INTL Function
-The `WORKDAY.INTL` function returns the serial number of the date/date before or after a specified number of workdays along with the custom weekend parameters. Weekend parameters is used to indicate which and how many days are to be considered as weekend days. Weekend days and any other days that are specified as holidays are not considered as workdays.
+The `WORKDAY.INTL` function returns the serial number of the date/date before or after a specified number of workdays along with the custom weekend parameters. The weekend parameters are used to indicate which and how many days are to be considered as weekend days. Weekend days and any other days that are specified as holidays are not considered as workdays.
 
 The `WORKDAY.INTL` function has the following syntax:
-
 
 ```
 =WORKDAY.INTL(start_date, days, [weekend], [holidays])
 ```
-The first and second arguments are optional. The third argument and the fourth arguments are optional. The third argument is a weekend number or string that specifies when weekends occur. Weekend number values indicate the following weekend days.
+The first and second arguments are optional. The third argument and the fourth argument are optional. The third argument is a weekend number or string that specifies when weekends occur. The weekend number values indicates the following weekend days.
 
 | **weekend-number** | **Weekend days** |
 | --- | --- |
@@ -420,7 +419,8 @@ The `YEARFRAC` function has the following syntax:
 ```
 =YEARFRAC(start_date, end_date, [basis])
 ```
-The first and second arguments are `required` whereas the third argument is optional. Let us consider a scenario where you can learn how to implement the `YEARFRAC` function in Excel. Consider the example given below:
+
+The first and second arguments are `required`, whereas the third argument is optional. Let us consider a scenario where you can learn how to implement the `YEARFRAC` function in Excel. Consider the example given below:
 
 | A | B | C | D | E |
 | --- | --- | --- | --- | --- |
@@ -440,3 +440,5 @@ The result will be updated as shown below:
 
 ## Conclusion
 With the end of this guide, you have learned all the date and time functions with simple examples in Excel 2019. 
+
+
