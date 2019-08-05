@@ -21,4 +21,8 @@ The arguments used in this function are mentioned below:
 - nper = `required`, Number of payment periods.
 - pmt = `required`,  payment made per period.
 - pv = `optional`, present value. If pv is omitted, it is assumed to be 0 (zero), and you must include the pmt argument in the function.
-- type = `optional`, The number 0 or 1 and indicates when payments are due. If type is omitted, it is assumed to be 0( 0 means it is asssumed that the payment has been made at the end of the period).
+- type = `optional`, The number 0 or 1 and indicates when payments are due. If type is omitted, it is assumed to be 0(zero)( zero means it is asssumed that the payment has been made at the end of the period and one means it is asssumed that the payment has been made at the beginning of the period).
+
+Let us consider a scenario where you can learn how to implement the `FV` function in Excel. Let's consider that 5 member of a group have made some investments in different banks in 2019. The payment has been made yearly ever since. The interest rate for each of them is different. What would be the FV for each of those members in 2024?
+
+
