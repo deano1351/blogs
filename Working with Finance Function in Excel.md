@@ -3,6 +3,7 @@ In this guide, you will learn how to work with financial Functions in Excel Micr
 
 - FV 
 - FVSCHEDULE 
+- PV
 ## Financial Functions
 In this section, you will learn about each of these financial functions through various scenarios.
 
@@ -81,3 +82,39 @@ In order to calculate the value, let us put the formula **`=FVSCHEDULE(E1, B1:D1
 | Rita | 8% | 7% | 10% | 1000 | 1271.16 |
 | Sam | 6% | 12% | 16% | 1000 | 1377.152 |
 | Tina | 15% | 16% | 12% | 1000 | 1494.08 |
+
+### The PV Function
+The `PV` function helps us to calculate present value of an investment based on a constant interest rate.
+
+
+The `PV` function has the following syntax:
+
+
+```
+=PV(rate, nper, pmt, [fv], [type])
+```
+The arguments used here are very similar to the ones that are used in the `FV` function explained above. 
+
+Let us consider a scenario where you can learn how to implement the `PV` function in Excel. Let's consider that 5 member of a group have made some investments in different banks in 2019. The payment has been made yearly ever since. The interest rate for each of them is different. If we have the FV amount made in 2024, what was the investment amount in 2019?
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **members** | **rate** | **nper** | **pmt** | **fv** | **type** | **pv amount** |
+| Pam | 10% | 5 | 1  | ₹ 1,604.40 | 0 | ? |
+| Rambo | 12% | 5 | 1 | ₹ 1,755.99 | 0 | ? |
+| Rita | 8% | 5 | 1 | ₹ 1,462.99 | 1 | ? |
+| Sam | 6% | 5 | 1  | ₹ 1,332.59 | 0 | ? |
+| Tina | 15%  | 5 | 1 | ₹ 2,003.60 | 1 | ? |
+
+
+In order to calculate the value, let us put the formula **`=fv(B1, C1, D1,E1,F1)`** in cell `G1` and then apply it in subsequent rows. This will  result as the present value as shown:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **members** | **rate** | **nper** | **pmt** | **fv** | **type** | **pv amount** |
+| Pam | 10% | 5 | 1  | ₹ 1,604.40 | 0 | ₹ -1,000.00 |
+| Rambo | 12% | 5 | 1 | ₹ 1,755.99 | 0 | ₹ -1,000.00 |
+| Rita | 8% | 5 | 1 | ₹ 1,462.99 | 1 | ₹ -1,000.00 |
+| Sam | 6% | 5 | 1  | ₹ 1,332.59 | 0 | ₹ -1,000.00 |
+| Tina | 15%  | 5 | 1 | ₹ 2,003.60 | 1 | ₹ -1,000.00 |
+
