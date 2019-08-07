@@ -2,7 +2,7 @@
 In this guide, you will learn how to work with financial Functions in Excel Microsoft Excel 2019. There are various financial functions which are present in the Excel 2019 version, as mentioned below:
 
 - FV 
-
+- FVSCHEDULE 
 ## Financial Functions
 In this section, you will learn about each of these financial functions through various scenarios.
 
@@ -44,3 +44,40 @@ In order to calculate the value, let us put the formula **`=fv(B1, C1, D1,E1,F1)
 | Rita | 8% | 5 | 1 | -1000 | 1 | ₹ 1,462.99 |
 | Sam | 6% | 5 | 1  | -1000 | 0 | ₹ 1,332.59 |
 | Tina | 15%  | 5 | 1 | -1000 | 1 | ₹ 2,003.60 |
+
+### The FVSCHEDULE Function
+The `FVSCHEDULE` function helps us to calculate the future value of an investment with the interest rate that varies. 
+
+The `FVSCHEDULE` function has the following syntax:
+
+
+```
+=FVSCHEDULE(principal, schedule)
+```
+The arguments used in this function are mentioned below:
+
+- principal = `required`, It is the present value or the investment 
+- Schedule = `required`, It is an array of interest rates that will be applied.
+
+
+Let us consider a scenario where you can learn how to implement the `FVSCHEDULE` function in Excel. Let's consider that 5 member of a group have made some investments in different banks in 2019. The payment has been made yearly ever since. The interest rate for each of them is different every year. What would be the FV for each of those members in 2022?
+
+| A | B | C | D | E | F | 
+| --- | --- | --- | --- | --- | --- |
+| **members** | **rate of first year** | **rate of second year** | **rate of third year** | **principal** | **future value** |
+| Pam | 10% | 11% | 13% | 1000 | ? |
+| Rambo | 12% | 13% | 15% | 1000 | ? |
+| Rita | 8% | 7% | 10% | 1000 | ? |
+| Sam | 6% | 12% | 16% | 1000 | ? |
+| Tina | 15% | 16% | 12% | 1000 | ? |
+
+In order to calculate the value, let us put the formula **`=FVSCHEDULE(E1, B1:D1)`** in cell `F1` and then apply it in subsequent rows. This will give result as the updated amount as shown:
+
+| A | B | C | D | E | F | 
+| --- | --- | --- | --- | --- | --- |
+| **members** | **rate of first year** | **rate of second year** | **rate of third year** | **principal** | **future value** |
+| Pam | 10% | 11% | 13% | 1000 | 1379.73 |
+| Rambo | 12% | 13% | 15% | 1000 | 1455.44 |
+| Rita | 8% | 7% | 10% | 1000 | 1271.16 |
+| Sam | 6% | 12% | 16% | 1000 | 1377.152 |
+| Tina | 15% | 16% | 12% | 1000 | 1494.08 |
