@@ -25,4 +25,22 @@ The arguments used in this function are mentioned below:
 
 Let us consider a scenario where you can learn how to implement the `FV` function in Excel. Let's consider that 5 member of a group have made some investments in different banks in 2019. The payment has been made yearly ever since. The interest rate for each of them is different. What would be the FV for each of those members in 2024?
 
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **members** | **rate** | **nper** | **pmt** | **pv** | **type** | **updated FV amount** |
+| Pam | 10% | 5 | 1  | -1000 | 0 | ? |
+| Rambo | 12% | 5 | 1 | -1000 | 0 | ? |
+| Rita | 8% | 5 | 1 | -1000 | 1 | ? |
+| Sam | 6% | 5 | 1  | -1000 | 0 | ? |
+| Tina | 15%  | 5 | 1 | -1000 | 1 | ? |
 
+In order to calculate the value, let us put the formula **`=fv(B1, C1, D1,E1,F1)`** in cell `G1` and then apply it in subsequent rows. This will give result as the updated amount as shown:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| members | rate | nper | pmt | pv    | type | function   |
+| Pam | 10% | 5 | 1  | -1000 | 0 | ₹ 1,604.40 |
+| Rambo | 12% | 5 | 1 | -1000 | 0 | ₹ 1,755.99 |
+| Rita | 8% | 5 | 1 | -1000 | 1 | ₹ 1,462.99 |
+| Sam | 6% | 5 | 1  | -1000 | 0 | ₹ 1,332.59 |
+| Tina | 15%  | 5 | 1 | -1000 | 1 | ₹ 2,003.60 |
