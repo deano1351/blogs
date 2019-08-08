@@ -120,3 +120,66 @@ In order to calculate the value, let us put the formula **`=fv(B1, C1, D1,E1,F1)
 | Sam | 6% | 5 | 1  | ₹ 1,332.59 | 0 | ₹ -1,000.00 |
 | Tina | 15%  | 5 | 1 | ₹ 2,003.60 | 1 | ₹ -1,000.00 |
 
+### The NPV Function
+The NPV or Net Present Value is the sum total of positive and negative cash flows over the years. In other words, it calculates the net present value of an investment at a given discount rate and a series of negative values (future payments) and positive values (income).
+
+It's syntax is given below:
+
+
+```
+NPV = (Rate, Value 1, [Value 2], [Value 3]…)
+```
+
+To understand the function, let us consider a case of an individual who did an initial investment of USD 5000 at an annual discount rate of 0.5% along with five corresponding year returns as 2000, 1500, 1500, 1800, and 1800 respectively.
+
+
+| A | B |
+| --- | --- |
+| **Details** | **In USD**  |
+| Rate | 5% |
+| Initial Investment | 5000.00 |
+| First-year return  | 2000.00 |
+| Second-year return | 1500.00 |
+| Third-year return  | 1500.00 |
+| Fourth-year return | 1800.00 |
+| Fifth-year return  | 1800.00 |
+
+To implement the NPV function use the following:
+
+
+```
+=NPV(B2,B4:B8)-B3
+```
+
+which gives an output of **USD 2452.27**.
+
+
+### The XNPV Function
+The XNPV function is quite similar to the NPV function except that here we provide dates for each return. The syntax is given below:
+
+
+```
+=XNPV(Rate, Values, Dates)
+```
+
+Let us take the above example but this time we also mention dates corresponding to each value:
+
+| A | B | C |
+| --- | --- | --- |
+| **Details** | **In USD**  | **Dates** |
+| Rate | 5% |   |
+| Initial Investment | -5000.00 | 01 January 2000 |
+| First-year return  | 2000.00 | 01 February 2001 |
+| Second-year return | 1500.00 | 01 February 2002 |
+| Third-year return  | 1500.00 | 01 April 2003 |
+| Fourth-year return | 1800.00 | 01 August 2004 |
+| Fifth-year return  | 1800.00 | 01 September 2005 |
+
+Now, to implement the `XNPV` function, you need to make sure that the initial investment value is present in the negative format and then pass the values in the function as given below:
+
+
+```
+=XNPV(B2,B3:B8, C3:C8)
+```
+
+which gives the value of **USD 233547**.
