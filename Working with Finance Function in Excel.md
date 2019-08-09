@@ -10,6 +10,7 @@ In this guide, you will learn how to work with financial functions in Microsoft 
 - PPMT
 - RATE
 - EFFECT
+- NOMINAL
 
 ## Financial Functions
 In this section, you will learn about each of these financial functions through various scenarios.
@@ -290,3 +291,28 @@ To understand this with an example, consider a nominal interest rate of 10% and 
 ```
 
 which gives us the result as **10%**.
+
+### The NOMINAL Function
+The NOMINAL function helps to answer the nominal interest rate when you're given with the effective interest rate and the number of compounding per year. The syntax is given below:
+
+
+```
+=NOMINAL(Effect_Rate, N_COMP_Y)
+```
+
+Let us consider the following tablular data to implement the NOMINAL function:
+
+| A | B |
+| --- | --- | 
+| Effective rate | 10% |
+| N_COMP_YEAR | 12 |
+
+
+```
+=NOMINAL(B1, B2)
+```
+
+which gives us the value as **10%**.
+
+## Conclusion
+In this guide, you've learned about various available financial functions in Excel 2019 like PMT, FV, RATE, etc. Apart from these, there're various other financial functions available in Excel which you can explore as per your need. 
