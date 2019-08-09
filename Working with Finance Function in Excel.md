@@ -37,7 +37,7 @@ Let us consider a scenario where you can learn how to implement the `FV` functio
 
 |    A    |  B   |  C   |  D  |   E   |  F   |     G      |
 | --- | --- | --- | --- | --- | --- | --- |
-| **members** | **rate** | **nper** | **pmt** | **pv** | **type** | **updated FV amount** |
+| **members** | **rate** | **nper** | **pmt** | **pv** | **type** | **updated FV amount in USD** |
 | Pam | 10% | 5 | 1  | -1000 | 0 | ? |
 | Rambo | 12% | 5 | 1 | -1000 | 0 | ? |
 | Rita | 8% | 5 | 1 | -1000 | 1 | ? |
@@ -48,12 +48,12 @@ In order to calculate the value, let us put the formula **`=fv(B1, C1, D1,E1,F1)
 
 |    A    |  B   |  C   |  D  |   E   |  F   |     G      |
 | --- | --- | --- | --- | --- | --- | --- |
-| **members** | **rate** | **nper** | **pmt** | **pv** | **type** | **updated FV amount** |
-| Pam | 10% | 5 | 1  | -1000 | 0 | ₹ 1,604.40 |
-| Rambo | 12% | 5 | 1 | -1000 | 0 | ₹ 1,755.99 |
-| Rita | 8% | 5 | 1 | -1000 | 1 | ₹ 1,462.99 |
-| Sam | 6% | 5 | 1  | -1000 | 0 | ₹ 1,332.59 |
-| Tina | 15%  | 5 | 1 | -1000 | 1 | ₹ 2,003.60 |
+| **members** | **rate** | **nper** | **pmt** | **pv** | **type** | **updated FV amount in USD** |
+| Pam | 10% | 5 | 1  | -1000 | 0 | 1,604.40 |
+| Rambo | 12% | 5 | 1 | -1000 | 0 | 1,755.99 |
+| Rita | 8% | 5 | 1 | -1000 | 1 | 1,462.99 |
+| Sam | 6% | 5 | 1  | -1000 | 0 | 1,332.59 |
+| Tina | 15%  | 5 | 1 | -1000 | 1 | 2,003.60 |
 
 ### The FVSCHEDULE Function
 The `FVSCHEDULE` function helps us to calculate the future value of an investment with the interest rate that varies. 
@@ -74,7 +74,7 @@ Let us consider a scenario where you can learn how to implement the `FVSCHEDULE`
 
 | A | B | C | D | E | F | 
 | --- | --- | --- | --- | --- | --- |
-| **members** | **rate of first year** | **rate of second year** | **rate of third year** | **principal** | **future value** |
+| **members** | **rate of first year** | **rate of second year** | **rate of third year** | **principal** | **future value in USD** |
 | Pam | 10% | 11% | 13% | 1000 | ? |
 | Rambo | 12% | 13% | 15% | 1000 | ? |
 | Rita | 8% | 7% | 10% | 1000 | ? |
@@ -85,7 +85,7 @@ In order to calculate the value, let us put the formula **`=FVSCHEDULE(E1, B1:D1
 
 | A | B | C | D | E | F | 
 | --- | --- | --- | --- | --- | --- |
-| **members** | **rate of first year** | **rate of second year** | **rate of third year** | **principal** | **future value** |
+| **members** | **rate of first year** | **rate of second year** | **rate of third year** | **principal** | **future value in USD** |
 | Pam | 10% | 11% | 13% | 1000 | 1379.73 |
 | Rambo | 12% | 13% | 15% | 1000 | 1455.44 |
 | Rita | 8% | 7% | 10% | 1000 | 1271.16 |
@@ -108,24 +108,24 @@ Let us consider a scenario where you can learn how to implement the `PV` functio
 
 | A | B | C | D | E | F | G |
 | --- | --- | --- | --- | --- | --- | --- |
-| **members** | **rate** | **nper** | **pmt** | **fv** | **type** | **pv amount** |
-| Pam | 10% | 5 | 1  | ₹ 1,604.40 | 0 | ? |
-| Rambo | 12% | 5 | 1 | ₹ 1,755.99 | 0 | ? |
-| Rita | 8% | 5 | 1 | ₹ 1,462.99 | 1 | ? |
-| Sam | 6% | 5 | 1  | ₹ 1,332.59 | 0 | ? |
-| Tina | 15%  | 5 | 1 | ₹ 2,003.60 | 1 | ? |
+| **members** | **rate** | **nper** | **pmt** | **fv** | **type** | **pv amount in USD** |
+| Pam | 10% | 5 | 1  | 1,604.40 | 0 | ? |
+| Rambo | 12% | 5 | 1 | 1,755.99 | 0 | ? |
+| Rita | 8% | 5 | 1 | 1,462.99 | 1 | ? |
+| Sam | 6% | 5 | 1  | 1,332.59 | 0 | ? |
+| Tina | 15%  | 5 | 1 | 2,003.60 | 1 | ? |
 
 
 In order to calculate the value, let us put the formula **`=fv(B1, C1, D1,E1,F1)`** in cell `G1` and then apply it in subsequent rows. This will  result as the present value as shown:
 
 | A | B | C | D | E | F | G |
 | --- | --- | --- | --- | --- | --- | --- |
-| **members** | **rate** | **nper** | **pmt** | **fv** | **type** | **pv amount** |
-| Pam | 10% | 5 | 1  | ₹ 1,604.40 | 0 | ₹ -1,000.00 |
-| Rambo | 12% | 5 | 1 | ₹ 1,755.99 | 0 | ₹ -1,000.00 |
-| Rita | 8% | 5 | 1 | ₹ 1,462.99 | 1 | ₹ -1,000.00 |
-| Sam | 6% | 5 | 1  | ₹ 1,332.59 | 0 | ₹ -1,000.00 |
-| Tina | 15%  | 5 | 1 | ₹ 2,003.60 | 1 | ₹ -1,000.00 |
+| **members** | **rate** | **nper** | **pmt** | **fv** | **type** | **pv amount in USD** |
+| Pam | 10% | 5 | 1  | ₹ 1,604.40 | 0 | -1,000.00 |
+| Rambo | 12% | 5 | 1 | ₹ 1,755.99 | 0 | -1,000.00 |
+| Rita | 8% | 5 | 1 | ₹ 1,462.99 | 1 | -1,000.00 |
+| Sam | 6% | 5 | 1  | ₹ 1,332.59 | 0 | -1,000.00 |
+| Tina | 15%  | 5 | 1 | ₹ 2,003.60 | 1 | -1,000.00 |
 
 ### The NPV Function
 The NPV or Net Present Value is the sum total of positive and negative cash flows over the years. In other words, it calculates the net present value of an investment at a given discount rate and a series of negative values (future payments) and positive values (income).
