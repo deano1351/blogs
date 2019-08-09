@@ -9,6 +9,7 @@ In this guide, you will learn how to work with financial functions in Microsoft 
 - PMT
 - PPMT
 - RATE
+- EFFECT
 
 ## Financial Functions
 In this section, you will learn about each of these financial functions through various scenarios.
@@ -267,3 +268,25 @@ To implement the RATE function on the given table with a guess of rate as 2%, us
 ```
 
 which gives us the estimated rate as **5%**.
+
+### The EFFECT Function
+The EFFECT function is used to find the effective annual interest rate when you're given with the nominal interest rate and the times of compounding per year. The syntax for this function is given below:
+
+
+```
+=EFFECT(Nominal_Rate, N_COMP_YEAR)
+```
+
+To understand this with an example, consider a nominal interest rate of 10% and the number of compounding per year as 12, then we can find the effective annual interest rate as shown:
+
+| A | B |
+| --- | --- |
+| Nominal rate | 10% |
+| N_COMP_YEAR | 12 |
+
+
+```
+=EFFECT(B1, B2)
+```
+
+which gives us the result as **10%**.
