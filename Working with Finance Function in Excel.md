@@ -8,6 +8,7 @@ In this guide, you will learn how to work with financial functions in Microsoft 
 - XNPV
 - PMT
 - PPMT
+- RATE
 
 ## Financial Functions
 In this section, you will learn about each of these financial functions through various scenarios.
@@ -235,3 +236,34 @@ Let's consider the same example as that of PMT function and try to find out the 
 | First Year | `=PPMT(B2, 1, B3, B4)` | -904.87 | 
 | Second Year | `=PPMT(B2, 2, B3, B4)` | -950.12 | 
 | Third Year | `=PPMT(B2, 3, B3, B4)` | -997.62 |
+
+### The RATE Function
+The RATE function helps to answer the interest rate needed to pay off the loan in full for a given period of time.
+
+Here's the syntax:
+
+
+```
+=RATE(NPER, PMT, PV, [FV], [Type], [Guess])
+```
+
+The new arguments stands for `NPER` (number of periods), `PMT` (amount paid per period), `Guess` (your guess on what should be the interest rate).
+
+Let's consider an example of a person who has taken a loan of USD 50000 from a bank which he paid in 6 years with USD 10000 yearly. We need to calculate the interest rate in this situation.
+
+Here's the data in tablular format:
+
+| A | B |
+| --- | --- |
+| Years | 6 |
+| PMT | -10000 |
+| Loan | 50000 |
+
+To implement the RATE function on the given table with a guess of rate as 2%, use:
+
+
+```
+=RATE(B2, B3, B4, 0, 0, 0.02)
+```
+
+which gives us the estimated rate as **5%**.
