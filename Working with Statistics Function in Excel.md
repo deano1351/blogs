@@ -6,6 +6,9 @@ The functions which we are going to learn in this guide are mentioned below:
 - AVERAGEIF
 - MEDIAN
 - PERMUT
+- COUNT
+- COUNTIF
+- FREQUENCY
 
 ## Statistical Functions
 In this section, we will list out the above stated functions:
@@ -162,3 +165,58 @@ On the given tabular data, implement the following formula:
 =COUNTIF(A1:A7, ">88")
 ```
 which results in the value **2** for the values 90 and 98. Note that the function has also ignored the blank cell.
+
+### The FREQUENCY Function
+Consider a column with a large number of values ranging from 1-1000 and you need to count how many values fall in the bins 0-270, 271-350, 351-888 and 888-1000. If you have small number of values available then this can be done manually, however, for large set of numbers, it is suggested to use the FREQUENCY function. It's syntax is given below:
+
+
+```
+=FREQUENCY(value_range, bin_range)
+```
+
+Now, let us consider a tabular data to implement the function:
+
+| A | B | 
+| --- | --- |
+| **Values** | **Bins** |
+| 255 | 270 |
+| 615 | 350 |
+| 478 | 888 |
+| 24 | 1000 |
+| 11 |  |
+| 998 |  |
+| 548 |  |
+| 250 |  |
+| 341 |  |
+| 880 |  |
+| 1222 |  |
+| 650 |  |
+| 555 |  |
+
+To implement the `FREQUENCY` function, you first need to learn the array function i.e., the given `FREQUENCY` function doesn't result only one item rather one plus the number of bin values. In our table, we have four values available in **Bins**, so the output of the `FREQUENCY` function will have five values which forms an array. Therefore, first you need to select five vertical cells and write the given formula which will be written in the first cell:
+
+
+```
+=FREQUENCY(A1:A13, B1:B4)
+```
+
+Once you wrote the formula, then press `Ctrl + Shift + Enter` which will result in the following answer and also writing the above formula in all the cells within curly braces `{}`.
+
+| A | B | C |
+| --- | --- | --- |
+| **Values** | **Bins** | **Frequency** |
+| 255 | 270 | **4** |
+| 615 | 350 | **1** |
+| 478 | 888 | **6** |
+| 24 | 1000 | **1** |
+| 11 |  | **1** |
+| 998 |  | |
+| 548 |  | |
+| 250 |  | |
+| 341 |  | |
+| 880 |  | |
+| 1222 |  | |
+| 650 |  | |
+| 555 |  | |
+
+You can refer this short YouTube [video](https://www.youtube.com/watch?v=uqDtwfKxZyY) to learn the use of array function.
