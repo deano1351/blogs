@@ -4,6 +4,10 @@ In this guide, you will learn how to work with financial functions in Microsoft 
 - FV 
 - FVSCHEDULE 
 - PV
+- NPV
+- XNPV
+- PMT
+- PPMT
 
 ## Financial Functions
 In this section, you will learn about each of these financial functions through various scenarios.
@@ -183,3 +187,51 @@ Now, to implement the `XNPV` function, you need to make sure that the initial in
 ```
 
 which gives the value of **USD 233547**.
+
+### The PMT Function
+The PMT or denotes the periodical payment required to pay off for a particular period of time with a constant interest rate. Let’s have a look at how to calculate it in excel –
+
+
+```
+=PMT(Rate, Nper, PV, [FV], [Type])
+```
+
+The arguments stand for `Nper` (Number of periods), `PV` (Present Value), and `FV` (Future value).
+
+To learn to implement the function in Excel, let's consider a case where we need to find the PMT for a person who need to pay an amount of USD 5000 in five years at an interest rate of 5%.
+
+| A | B |
+| --- | --- |
+| **Details** | **In USD** | 
+| Rate | 5% |
+| Number of periods | 5.00 | 
+| Present Value | 5000.00 |
+
+To calculate PMT, we use the function as shown:
+
+
+```
+=PMT(B2, B3, B4)
+```
+
+which gives us the value as **-1154.87**. Note that we have not included the `FV` and `Type` value for our example.
+
+### The PPMT Function
+The PPMT function is a variation of the PMT function where the payment is calculated on the principal with a constant interest rate and constant periodic payments.
+
+Here's the syntax:
+
+
+```
+=PPMT(Rate, Per, Nper, PV, [FV], [Type])
+```
+
+where all the arguments have the same meaning as that of the PMT function except `Per` which denotes the period for which the principal is to be calculated.
+
+Let's consider the same example as that of PMT function and try to find out the PPMT for first, second and third years.
+
+| Year | PPMT | Result |
+| --- | --- | --- |
+| First Year | `=PPMT(B2, 1, B3, B4)` | -904.87 | 
+| Second Year | `=PPMT(B2, 2, B3, B4)` | -950.12 | 
+| Third Year | `=PPMT(B2, 3, B3, B4)` | -997.62 |
