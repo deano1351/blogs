@@ -9,6 +9,7 @@ The functions which we are going to learn in this guide are mentioned below:
 - COUNT
 - COUNTIF
 - FREQUENCY
+- STDEV and VAR
 
 ## Statistical Functions
 In this section, we will list out the above stated functions:
@@ -220,3 +221,34 @@ Once you wrote the formula, then press `Ctrl + Shift + Enter` which will result 
 | 555 |  | |
 
 You can refer this short YouTube [video](https://www.youtube.com/watch?v=uqDtwfKxZyY) to learn the use of array function.
+
+### The STDEV and VAR Functions
+So far we have learned about the functions which either belong to the measure of central tendency or commonly used. Now, let us also learn to use two statistical functions which belong to the class of dispersion. We are talking about the variance and standard deviation of a sample collected from a population data.
+
+Their syntax is presented below:
+
+
+```
+=STDEV(data_array)
+=VAR(data_array)
+```
+
+Let us consider a sample of five values taken from a population data as shown:
+
+| A |
+| --- |
+| 50 |
+| 98 |
+| 12 |
+| 233 |
+| 1 |
+
+To find the variance and standard deviation in this data, we can implement the functions as shown:
+
+
+```
+=VAR(A1:A5)
+=STDEV(A1:A5)
+```
+
+which results in the values as **Variance = 8872.7** and **Standard Deviation = 94.19**.
