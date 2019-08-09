@@ -9,7 +9,8 @@ The functions which we are going to learn in this guide are mentioned below:
 - COUNT
 - COUNTIF
 - FREQUENCY
-- STDEV and VAR
+- STDEV, and VAR
+- PERCENTILE.INC, QUARTILE.INC, and RANK.EQ
 
 ## Statistical Functions
 In this section, we will list out the above stated functions:
@@ -252,3 +253,74 @@ To find the variance and standard deviation in this data, we can implement the f
 ```
 
 which results in the values as **Variance = 8872.7** and **Standard Deviation = 94.19**.
+
+### The PERCENTILE.INC, QUARTILE.INC and RANK.EQ Functions
+The `PERCENTILE.INC` function returns the K'th percentile of values in a provided range, where K lies in the range 0 - 1 (both inclusive). 
+
+The `QUARTILE.INC` function returns the specified quartile of a set of provided range of numbers, based on percentile value 0 - 1 (both inclusive). 
+Here's the list of available percentiles that we can attain through `QUARTILE.INC` function:
+
+| Argument | Result |
+| --- | --- |
+| 0 | Minimum value |
+| 1 | First quartile (25th percentile) |
+| 2 | Second quartile (50th percentile). Also, the **median**. |
+| 3 | Third quartile (75th percentile) |
+| 4 | Maximum quartile |
+
+
+The `RANK.EQ` function returns the mode of a list of provided numbers. FYI, mode means the number with the most frequency. Also, if more than one value has same rank, the top rank of that set is returned.
+
+Here're the syntax of these functions:
+
+
+```
+=PERCENTILE.INC(array, k)
+=QUARTILE.INC(array, quart)
+=RANK.EQ(number_for_which_you_want_to_find_rank, ref, [order])
+```
+
+Let us consider the below tabular data to implement these functions:
+
+| A | 
+| --- |
+| 5 |
+| 5 |
+| 8 |
+| 9 |
+| 7 |
+| 1 |
+| 11 |
+| 4 |
+| 2 |
+| 5 |
+
+To find the 80th percentile of the data, use the following:
+
+
+```
+=PERCENTILE.INC(A1:A10, 0.8)
+```
+
+which gives the value as **8.2**.
+
+To find the 50th percentile using the `QUARTILE.INC` function, pass the value **2** to the `quart` argument:
+
+
+```
+=QUARTILE.INC(A1:A10, 2)
+```
+
+which gives the value as **5**.
+
+To find the rank of number **7**, proceed with the following formula:
+
+
+```
+=RANK.EQ(A5, A1:A10)
+```
+
+which gives us the rank of **7** as **4**.
+
+## Conclusion
+In this guide, you've learned various important statistical functions which are commonly used in Excel. So, go ahead and start exploring them in your own scenarios.
