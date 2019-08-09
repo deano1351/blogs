@@ -5,6 +5,7 @@ The functions which we are going to learn in this guide are mentioned below:
 - AVERAGE
 - AVERAGEIF
 - MEDIAN
+- PERMUT
 
 ## Statistical Functions
 In this section, we will list out the above stated functions:
@@ -84,4 +85,26 @@ So, if we try to average out the number of patients then the anomaly (87) for fi
 
 To apply the median on the table, you can proceed as `=MEDIAN(A1, B1, C1, D1, E1)` which results in the answer as **12** which if compared with the `=AVERAGE(A1, B1, C1, D1, E1)` with answer **26.6 = 27** makes more sense.
 
+### The PERMUT Function
+Permutation is one of the widely used concept in the realm of statistics. You can perform the permutation on a given data using the given syntax in Excel:
 
+
+```
+=PERMUT(n, n_chosen)
+```
+
+To understand what permutation is and how you can implement it in Excel, consider a case of three athletes of which only two need to be selected for a marathon. Permutation helps in answering this question without counting all the possibilities by hand. If we represent this case in a tablular format, it looks like this:
+
+| A | B |
+| --- | --- |
+| **Number of athletes** | **To be chosen** |
+| 3 | 2 |
+
+You can implement the `PERMUT` function as shown:
+
+
+```
+=PERMUT(A1, B1)
+```
+
+which gives the answer as **6** stating that there are six possibilities to choose two athletes from a group of three.
