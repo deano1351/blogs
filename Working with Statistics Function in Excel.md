@@ -108,3 +108,57 @@ You can implement the `PERMUT` function as shown:
 ```
 
 which gives the answer as **6** stating that there are six possibilities to choose two athletes from a group of three.
+
+### The COUNTBLANK Function
+The COUNTBLANK function returns the number of blank cells in a given specified range of cells. This can be a very useful function when you need to know how many values are missing in a data.
+
+The syntax for the COUNTBLANK function is given below:
+
+
+```
+=COUNTBLANK(range_of_cells)
+```
+
+To implement it in Excel, consider the given tabular data:
+
+| A |
+| --- |
+| **Values** |
+| 9 |
+|  |
+| 5 |
+|  |
+|  |
+| 8 |
+| 7 |
+
+So, if you implement `=COUNTBLANK(A1:A7)` it counts the number of blank values. The result of the formula is **3** which represents the one blank value between **9** and **5** along with two blank values between **5** and **8**.
+
+### The COUNTIF Function
+Let us assume you need to calculate the number of people whose marks are above a cut-off decided at value 88. To do this, we can use the `COUNTIF` function whose syntax is given below:
+
+
+```
+=COUNTIF(range_of_cells)
+```
+
+To illustrate the scenario, consider the given tabular data:
+
+| A |
+| --- |
+| **Marks** |
+| 50 |
+| 90 |
+|  |
+| 23 |
+| 65 |
+| 98 |
+| 55 |
+
+On the given tabular data, implement the following formula:
+
+
+```
+=COUNTIF(A1:A7, ">88")
+```
+which results in the value **2** for the values 90 and 98. Note that the function has also ignored the blank cell.
