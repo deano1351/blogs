@@ -2,7 +2,6 @@
 In this guide, you will learn how to format excel worksheets and cells in Microsoft Excel 2019. There are various methods through which you can format the cells in Excel 2019 version, as mentioned below:
 
 - Font, Font style and Font size
-- Text style( like Italic, Bold, Underline, Double Underline)
 - Background color of the cell(s) and the color of the text in the cell
 - Borders of the cell(s)
 - Alignment of the text in the cell(s)( like Top, Middle, Bottom, Left, Right and center alignment)
@@ -69,6 +68,69 @@ We will take another example with the same table and change the font size of the
 - **Step Three**: The resultant table will look as it is in the image given below:
 
 ![Imgur](https://i.imgur.com/Bt0CdGl.png)
+
+## Background color of the cell(s) and the color of the text in the cell
+The default background color of a cell is `White` whereas the default color of the text in a cell is `Black`. We will consider the following table for formatting:
+
+| A | B | C |
+| --- | --- | --- |
+| **Item Number** | **Item Name** | **Price of the Item** |
+| 1 | Pen | 10 |
+| 2 | Lunch Box | 20 |
+| 3 | Bag | 50 |
+
+In order to change the background of the cell(s), we need to follow some steps mentioned below:
+
+- **Step One**: Selecting the cell(s) as it is shown in the image below:
+
+![Imgur](https://i.imgur.com/AmCwdcq.png)
+
+- **Step Two**: Click on the Home tab.
+- **Step Three**:Click the downward-pointing arrow that appears to the right of the Fill Color icon and click the color you want to apply as the background of the cell(s) as shown in the image below:
+
+![Imgur](https://i.imgur.com/TWGOZQb.png)
+
+- **Step Four**: After clicking on green color you will have the final table as given below:
+
+![Imgur](https://i.imgur.com/emG6Zd1.png)
+
+To change the text color in the cell(s), we will follow similar steps:
+
+- **Step One**: Selecting the cell(s) as it is shown in the image below:
+
+![Imgur](https://i.imgur.com/OgfYoJM.png)
+
+- **Step Two**: Click on the Home tab.
+- **Step Three**:Click the downward-pointing arrow that appears to the right of the Font Color icon and click the color you want to apply as the text color in the cell(s) as shown in the image below:
+
+![Imgur](https://i.imgur.com/HhP8hxN.png)
+
+- **Step Four**: After clicking on red color you will have the final table as given below:
+
+![Imgur](https://i.imgur.com/IZCgnMB.png)
+
+## Borders of the cell(s)
+It helps in highlighting the cell(s) and make it look neat. In order to explain the process of formatting we will consider the table given below:
+
+| A | B | C |
+| --- | --- | --- |
+| **Item Number** | **Item Name** | **Price of the Item** |
+| 1 | Pen | 10 |
+| 2 | Lunch Box | 20 |
+| 3 | Bag | 50 |
+
+We can add borders to the cell(s) by following few steps mentioned below:
+
+- **Step One**:Select one or more cells.
+
+![Imgur](https://i.imgur.com/AmCwdcq.png)
+
+
+
+
+
+
+
 
 
 
