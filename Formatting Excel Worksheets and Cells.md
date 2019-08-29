@@ -36,6 +36,10 @@ Consider an example where you want to change the font of the table headers. Ther
 
 ![Imgur](https://i.imgur.com/lcS3L3h.png)
 
+- Step Three: The resultant table will look as it is in the image given below.
+
+![Imgur](https://i.imgur.com/YF5OCK5.png)
+
 
 
 
