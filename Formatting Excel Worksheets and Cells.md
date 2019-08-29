@@ -199,9 +199,14 @@ select value `USD 1,234.10` for `Negative numbers` -> click `OK`. These steps ca
 
 ![Imgur](https://i.imgur.com/ZgVo0wo.png)
 
-- **Step Five**: The output table will be shown in the image given below:
+- **Step Five**: The output table will be as given below:
 
-![Imgur](https://i.imgur.com/hgytPCx.png)
+| A | B | C |
+| --- | --- | --- |
+| **Item Number** | **Item Name** | **Price of the Item** |
+| 1 | Pen | USD 10:00 |
+| 2 | Lunch Box | USD 20:00 |
+| 3 | Bag | USD 50:00 |
 
 ## Conclusion
 In this guide, you have learnt few of the Excel worksheet and cell formatting methods 
