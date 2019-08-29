@@ -17,7 +17,7 @@ Select `Format Cells` option from the given choices and one new dialouge box wil
 ![Imgur](https://i.imgur.com/E6HFkD1.png)
 
 
-### Font, Font style and Font size
+## Font, Font style and Font size
 In order to change font, font style and font size, we need to change the format of the cell(s). Consider the the table given below:
 
 | A | B | C |
@@ -30,17 +30,34 @@ In order to change font, font style and font size, we need to change the format 
 
 Consider an example where you want to change the font of the table headers. There are some steps that you will need to follow to change the font:
 
-- Step One: select all cells that contain table header and it will look as it is in the image given below.
+- **Step One**: select all cells that contain table header and it will look as it is in the image given below:
 
 ![Imgur](https://i.imgur.com/hAiGJ2O.png)
 
-- Step Two: Press right click on mouse -> select Format Cells -> select Font -> select `Arial Black` option from Font -> click OK. It will look as it is in the image given below.
+- **Step Two**: Press right click on mouse -> select `Format Cells` -> select `Font` -> select `Arial Black` option from Font -> click `OK`. It will look as it is in the image given below:
 
 ![Imgur](https://i.imgur.com/lcS3L3h.png)
 
-- Step Three: The resultant table will look as it is in the image given below.
+- **Step Three**: The resultant table will look as it is in the image given below:
 
 ![Imgur](https://i.imgur.com/YF5OCK5.png)
+
+Now taking another example with the same table, you can change font style of the table header. There are similar steps that you will need to follow to change the font style: 
+
+- **Step One**: select all cells that contain table header and it will look as it is in the image given below:
+
+![Imgur](https://i.imgur.com/pD0SHMq.png)
+
+- **Step Two**: Press right click on mouse -> select `Format Cells` -> select `Font` -> select `Italic` option from Font style -> click `OK`. It will look as it is in the image given below:
+
+![Imgur](https://i.imgur.com/rMHLueS.png)
+
+- **Step Three**: The resultant table will look as it is in the image given below:
+
+![Imgur](https://i.imgur.com/22Uxbt4.png)
+
+
+
 
 
 
