@@ -159,6 +159,15 @@ consider an example where you will learn to `Center` align the table headers.The
 
 ![Imgur](https://i.imgur.com/0JpCYC2.png)
 
+## Text wrapping and Orientation
+It wraps text, so it appears on multiple lines in a cell. You can either format the cell so the text will be wrapped automatically, or you can enter a line break manually. Data in the cell wraps to fit the column width, so even if you change the column width, data wrapping adjusts automatically. In case all wrapped text is not visible, it may be because the row is set to a specific height or that the text is in a range of cells that has been merged. Orientation helps you to rotate your text up, down, counterclockwise or clockwise, or align text vertically etc. 
+
+You can follow the steps mentioned below for text wrapping:
+
+- **Step One**: Select the cell(s) that you want to format.
+- **Step Two**: Go to the Home tab, then in the Alignment group, click Wrap Text(pointed with red arrow) as shown below in the image:
+
+![Imgur](https://i.imgur.com/JBF7vLY.png)
 
 
 
