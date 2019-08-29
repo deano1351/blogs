@@ -11,7 +11,21 @@ There are various methods through which you can format the cells in Excel 2019 v
 - Alignment of the text in the cell(s)(like Top, Middle, Bottom, Left, Right and center alignment)
 - Text wrapping and Orientation
 
-### Font style and Font size
+### Font, Font style and Font size
+In order to change font, font style and font size, we need to change the format of the cell(s). Consider the the table given below:
+
+| A | B | C |
+| --- | --- | --- |
+| **Item Number** | **Item Name** | **Price of the Item** |
+| 1 | Pen | 10 |
+| 2 | Lunch Box | 20 |
+| 3 | Bag | 50 |
+
+In the Table, if we want to change the font of the few cells under coulmn "Item Number" then select all those cells and press right click of the mouse. Few options will be appear as shown below in the image:
+
+![Imgur](https://i.imgur.com/Yxdfkkw.png)
+
+
 
 
 
