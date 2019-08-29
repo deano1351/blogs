@@ -125,6 +125,42 @@ We can add borders to the cell(s) by following few steps mentioned below:
 
 ![Imgur](https://i.imgur.com/AmCwdcq.png)
 
+- **Step Two**: Click the Home tab.
+- **Step Three**: Click the downward-pointing arrow to the right of the Border icon in the Font group. Few options will appear and you can select the type of border you want to add to your cells as shown in the image given below:
+
+![Imgur](https://i.imgur.com/pmKKSGl.png)
+
+- **Step Four**:Here `All Border` otion was selected and final output table is as shown below:
+
+![Imgur](https://i.imgur.com/8hqhLim.png)
+
+## Alignment of the text in the cell(s)
+Alignement of the cell(s) refer to the way in which content of the cell is aligned with the edges of the cell. It helps with the better  and clearer view of the data.
+To explain the method of the alignment formatting, we will consider the following table:
+
+| A | B | C |
+| --- | --- | --- |
+| **Item Number** | **Item Name** | **Price of the Item** |
+| 1 | Pen | 10 |
+| 2 | Lunch Box | 20 |
+| 3 | Bag | 50 |
+
+consider an example where you will learn to `Center` align the table headers.There are few steps that you need to follow to perform alignment formatting:
+
+- **Step One**: Select the table headers as shown below:
+
+![Imgur](https://i.imgur.com/TgZkEiI.png)
+
+- **Step Two**: Select the middle align in home tab(pointed by a red arrow) as shown below in the image:
+
+![Imgur](https://i.imgur.com/M2JudYT.png)
+
+- **Step Three**: The final table will be as shown in the image given below:
+
+![Imgur](https://i.imgur.com/0JpCYC2.png)
+
+
+
 
 
 
