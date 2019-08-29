@@ -1,5 +1,5 @@
 ## Introduction
-In this guide, you will learn how to format excel worksheets and cells in Microsoft Excel 2019. There are various methods through which you can format the cells in Excel 2019 version, as mentioned below:
+In this guide, you will learn how to format excel worksheets and cells in Microsoft Excel 2019. Data in excel sheet are confusing, boring and difficult to read and understand without formatting. To make data look more interesting and descriptive, formatting is used. Good formatting method helps youu to find meaning in the spreadsheet without having trouble of going through each and every individual cell. Cells with good formatting will draw your attention to the important cells automatically. There are various methods through which you can format the cells in Excel 2019 version, as mentioned below:
 
 - Font, Font style and Font size
 - Background color of the cell(s) and the color of the text in the cell
