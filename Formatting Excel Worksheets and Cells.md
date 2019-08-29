@@ -159,7 +159,7 @@ consider an example where you will learn to `Center` align the table headers.The
 
 ![Imgur](https://i.imgur.com/0JpCYC2.png)
 
-## Text wrapping and Orientation
+## Text Wrapping and Orientation
 It wraps text, so it appears on multiple lines in a cell. You can either format the cell so the text will be wrapped automatically, or you can enter a line break manually. Data in the cell wraps to fit the column width, so even if you change the column width, data wrapping adjusts automatically. In case all wrapped text is not visible, it may be because the row is set to a specific height or that the text is in a range of cells that has been merged. Orientation helps you to rotate your text up, down, counterclockwise or clockwise, or align text vertically etc. 
 
 You can follow the steps mentioned below for text wrapping:
@@ -168,6 +168,43 @@ You can follow the steps mentioned below for text wrapping:
 - **Step Two**: Go to the Home tab, then in the Alignment group, click Wrap Text(pointed with red arrow) as shown below in the image:
 
 ![Imgur](https://i.imgur.com/JBF7vLY.png)
+
+## Formatting Numbers
+Numbers are formatted in order to avoid the confusion like whether the given number is negative or positive, does it represent currency, or date, or time, or percentage or text etc.
+To explain the method of the number formatting, we will consider the following table:
+
+| A | B | C |
+| --- | --- | --- |
+| **Item Number** | **Item Name** | **Price of the Item** |
+| 1 | Pen | 10 |
+| 2 | Lunch Box | 20 |
+| 3 | Bag | 50 |
+
+There are few steps mentioned below for formatting the Coulmn `Price of the Item` value in to currency:
+
+- **Step One**: Select the cell(s) C1:C3. as shown in the image below:
+
+![Imgur](https://i.imgur.com/kNh9qh6.png) 
+
+- **Step Two**: Press right click on the mouse and  few options will appear as shown in the image below:
+
+![Imgur](https://i.imgur.com/Yxdfkkw.png)
+
+- **Step Three**: select `Format Cells` and the new dialog box will open and select `Number` tab as shown below on the image:
+
+![Imgur](https://i.imgur.com/B6g7hP3.png)
+
+- **Step Four**: select `Currency` under `Category` -> select the value `Two` for `Decimal places` -> select `USD` value for `Symbol` ->
+select value `USD 1,234.10` for `Negative numbers` -> click `OK`. These steps can be seen in the image given below:
+
+![Imgur](https://i.imgur.com/ZgVo0wo.png)
+
+- **Step Five**: The output table will be shown in the image given below:
+
+![Imgur](https://i.imgur.com/hgytPCx.png)
+
+## Conclusion
+In this guide, you have learnt few of the Excel worksheet and cell formatting methods 
 
 
 
