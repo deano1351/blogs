@@ -56,6 +56,19 @@ Now taking another example with the same table, you can change font style of the
 
 ![Imgur](https://i.imgur.com/22Uxbt4.png)
 
+We will take another example with the same table and change the font size of the table header. There are similar steps that you will need to follow to change the font style: 
+
+- **Step One**: select all cells that contain table header and it will look as it is in the image given below:
+
+![Imgur](https://i.imgur.com/sD5tpdF.png)
+
+- **Step Two**: Press right click on mouse -> select `Format Cells` -> select `Font` -> select `8` option from Font size -> click `OK`. It will look as it is in the image given below:
+
+![Imgur](https://i.imgur.com/WwpbefO.png)
+
+- **Step Three**: The resultant table will look as it is in the image given below:
+
+![Imgur](https://i.imgur.com/Bt0CdGl.png)
 
 
 
