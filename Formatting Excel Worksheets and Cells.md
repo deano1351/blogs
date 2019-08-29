@@ -26,8 +26,8 @@ In order to change font, font style and font size, we need to change the format 
 | 2 | Lunch Box | 20 |
 | 3 | Bag | 50 |
 
-
-Further, we will consider an example where we want to change the font of the table headers. There are some steps that we will need to follow to change the font:
+### Changing Text Font
+Let's consider an example where we want to change the font of the table headers. There are some steps that we will need to follow to change the font:
 
 - **Step One**: select all the cells that contain table header and it will look as in the image given below:
 
@@ -41,6 +41,7 @@ Further, we will consider an example where we want to change the font of the tab
 
 ![Imgur](https://i.imgur.com/YF5OCK5.png)
 
+### Changing Text Font Style
 Now, taking another example with the same table, you can change font style of the table header. There are similar steps that you will need to follow to change the font style: 
 
 - **Step One**: select all cells that contain table header and it will look as in the image given below:
@@ -55,6 +56,7 @@ Now, taking another example with the same table, you can change font style of th
 
 ![Imgur](https://i.imgur.com/22Uxbt4.png)
 
+### Changing Text Font Size
 We will take another example with the same table and change the font size of the table header. There are similar steps that you will need to follow to change the font style: 
 
 - **Step One**: select all cells that contain table header and it will look as in the image given below:
@@ -70,6 +72,8 @@ We will take another example with the same table and change the font size of the
 ![Imgur](https://i.imgur.com/Bt0CdGl.png)
 
 ## Background color of the cell(s) and the color of the text in the cell
+
+### Changing Background Color of a Cell
 The default background color of a cell is `White` whereas the default color of the text in a cell is `Black`. We will consider the following table for formatting:
 
 | A | B | C |
@@ -94,6 +98,7 @@ In order to change the background of the cell(s), we need to follow some steps m
 
 ![Imgur](https://i.imgur.com/emG6Zd1.png)
 
+### Changing Text Color in a Cell
 To change the text color in the cell(s), we will follow similar steps:
 
 - **Step One**: Selecting the cell(s) as shown in the image below:
@@ -209,4 +214,12 @@ select value `USD 1,234.10` for `Negative numbers` -> click `OK`. These steps ca
 | 3 | Bag | USD 50:00 |
 
 ## Conclusion
-In this guide, you have learnt few of the Excel worksheet and cell formatting methods 
+So far in this guide, you have learnt various Excel worksheet and cell formatting methods like styling font properties, changing cell colors, text wrapping, formatting numbers, etc. Now, go ahead and explore more of these Excel features.
+
+## Further Reading
+You may also like to learn the below Excel topics:
+- [Working with Time and Date Functions in Excel - Part 1](/guides/working-with-time-date-functions-excel-part-1)
+- [Working with Time and Date Functions in Excel - Part 2](/guides/working-with-time-date-functions-excel-part-2)
+- [Excel Logic Function Playbook](/guides/working-with-logical-functions-in-excel)
+- [Working with Finance Function in Excel](/guides/working-finance-function-excel)
+- [Working with Statistics Function in Excel](/guides/working-statistics-function-excel)
