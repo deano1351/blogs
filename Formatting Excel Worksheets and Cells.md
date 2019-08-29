@@ -1,8 +1,5 @@
 ## Introduction
-In this guide, you will learn how to format excel worksheets and cells in Microsoft Excel 2019. 
-
-##  Formatting Cells
-There are various methods through which you can format the cells in Excel 2019 version, as mentioned below:
+In this guide, you will learn how to format excel worksheets and cells in Microsoft Excel 2019. There are various methods through which you can format the cells in Excel 2019 version, as mentioned below:
 
 - Font, Font style and Font size
 - Text style(like Italic, Bold, underline, Double underline)
@@ -27,7 +24,7 @@ In the Table, if we want to change the font, font style or font size of the few 
 
 Select `Format Cells` option from the given choices and one new dialouge box will appear. Select `Font` option from the dialouge box as shown in the image below:
 
-![Imgur](https://i.imgur.com/5RQOCsc.png)
+![Imgur](https://i.imgur.com/E6HFkD1.png)
 
 After choosing `Font` option, you can find many options below Font, Font style and Size. You can select the options as per your requirement and then click `OK` to implement your changes.
 
