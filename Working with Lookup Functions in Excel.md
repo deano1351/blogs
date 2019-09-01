@@ -37,7 +37,15 @@ The `ADDRESS` function has the following syntax:
 
 The arguments used in this function are mentioned below:
 
-- row_num = Required. A numeric value that specifies the row number to use in the cell reference.
 
+- row_num = `Required`, it is a  numeric value that specifies the row number to be used in the cell reference.
+- column_num = `Required`, it is a  numeric value that specifies the column number to use in the cell reference.
+- abs_num = `Optional`, it is a numeric value that specifies the type of reference to return.
+| --- | --- |
+| **abs_num** | **Returns type of reference** |
+| 1 or omitted | Absolute |
+| 2 | Absolute row; relative column |
+| 3 | Relative row; absolute column |
+| 4 | Relative |
 
 
