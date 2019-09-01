@@ -53,4 +53,6 @@ The arguments used in this function are mentioned below:
 - A1 = `Optional`, it is a logical value that specifies the A1 or R1C1 reference style. A1 style means, columns are labeled alphabetically, and rows are labeled numerically whereas R1C1 reference style means, both columns and rows are labeled numerically. If the A1 argument value is TRUE or omitted in the function, the `ADDRESS` function will return an A1-style reference; if the A1 argument value is FALSE, the ADDRESS function will return an R1C1-style reference.
 - sheet_text =  `Optional`, it is a text value that specifies the name of the worksheet to be used as the external reference. If the sheet_text argument value is omitted, no sheet name will be used, and the address returned by the function refers to a cell on the current sheet.
 
+Let us consider a scenario where you can learn how to implement the `ADDRESS` function in Excel. Consider the example given below.
+
 
