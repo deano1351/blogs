@@ -25,7 +25,10 @@ In this guide, you will learn how to work with lookup functions in Microsoft Exc
 - SORTBY function
 - RTD function
  
-## ADDRESS Function
+ ## LOOKUP Functions
+In this section, you will learn about each of these lookup functions through various scenarios.
+
+### ADDRESS Function
 The `ADDRESS` function gives us the address  for a cell based on  the given  row and column number.
 
 The `ADDRESS` function has the following syntax:
@@ -36,7 +39,6 @@ The `ADDRESS` function has the following syntax:
 ```
 
 The arguments used in this function are mentioned below:
-
 
 - row_num = `Required`, it is a  numeric value that specifies the row number to be used in the cell reference.
 - column_num = `Required`, it is a  numeric value that specifies the column number to use in the cell reference.
@@ -75,4 +77,14 @@ The result will be updated as shown below:
 | 4 | 7 | 11 | 3 | 0 | sheet1 | =ADDRESS(B4, C4, D4, E4, F4) | sheet1!R[7]C11 |
 | 5 | 18 | 12 | 4 | 1 |  | =ADDRESS(B5, C5, D5, E5) | L18 |
 
+### AREAS Function
+It gives the number of areas in a given reference where an area is a range of contiguous cells or a single cell.
 
+The `AREAS` function has the following syntax:
+
+
+```
+=AREAS(reference)
+```
+
+The argument used in this function is mentioned below:
