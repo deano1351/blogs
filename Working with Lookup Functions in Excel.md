@@ -272,7 +272,7 @@ The `VLOOKUP` function has the following syntax:
 
 
 ```
-=VLOOKUP(lookup value, table_array, col_index_num, [range_lookup]).
+=VLOOKUP(lookup value, table_array, col_index_num, [range_lookup])
 ```
 
 The arguments used in this function are mentioned below:
@@ -288,3 +288,20 @@ Let us consider a scenario where you can learn how to implement the `VLOOKUP` fu
 Now, you want to know the `D.O.B` for `ID = 116`, then you  need to write the `=vlookup(116,A2:E11,5,0)` function so that you will get the output as `12-Aug-92` as shown in the image below:
 
 ![Imgur](https://i.imgur.com/ivxl73i.png)
+
+### HLOOKUP Function
+`HLOOKUP` function works in a very similar manner as that of `VLOOKUP` function and it stands for `Horizontal LOOKUP`. It searches for a value in the top row of a given table or an array of values, and then it returns a value in the same column from a row you specify in the table or array.
+The `HLOOKUP` function has the following syntax:
+
+
+```
+=HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])
+```
+
+Let us consider a scenario where you can learn how to implement the `HLOOKUP` function in Excel. Consider that you have a database that contains information of all teachers in a class as it is given in the image below:
+
+![Imgur](https://i.imgur.com/oShy0oM.png)
+
+Now, you want to know the `D.O.B` for `ID = 115`, then you  need to write the `=HLOOKUP(115,B1:K5,5,0)` function so that you will get the output as `03-Aug-88` as shown in the image below:
+
+![Imgur](https://i.imgur.com/ISKayCx.png)
