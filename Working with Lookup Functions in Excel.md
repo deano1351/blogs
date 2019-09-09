@@ -236,7 +236,7 @@ The arguments used in this function are mentioned below:
 - `lookup_array` = **Required**, it is the range of cells which is being searched.
 - `match_type` = **Optional**, this argument specifies how the Excel matches `lookup_value` with values in the given `lookup_array`. The default value  is 1 for this argument.The table given below describes on what basis the function finds values based on the setting of the `match_type` argument:
 
-| Match_type | Behavior |
+| **Match_type** | **Behavior** |
 | --- | --- |
 | 1 or omitted | It finds the largest value that is less than or equal to `lookup_value`. The values in the `lookup_array` argument must be placed in ascending order, for example: ...-2, -1, 0, 1, 2, ..., A-Z, FALSE, TRUE. |
 | 0 | It finds the first value that is exactly equal to `lookup_value`. The values in the `lookup_array` argument can be in any order |
