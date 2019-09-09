@@ -25,9 +25,9 @@ The `ADDRESS` function has the following syntax:
 
 The arguments used in this function are mentioned below:
 
-- row_num = `Required`, it is a  numeric value that specifies the row number to be used in the cell reference.
-- column_num = `Required`, it is a  numeric value that specifies the column number to use in the cell reference.
-- abs_num = `Optional`, it is a numeric value that specifies the type of reference to return as mentioned in the table below:
+- `row_num` = **Required**, it is a  numeric value that specifies the row number to be used in the cell reference.
+- `column_num` = **Required**, it is a  numeric value that specifies the column number to use in the cell reference.
+- `abs_num` = **Optional**, it is a numeric value that specifies the type of reference to return as mentioned in the table below:
 
 | A | B |
 | --- | --- |
@@ -37,8 +37,8 @@ The arguments used in this function are mentioned below:
 | 3 | Relative row; absolute column |
 | 4 | Relative |
 
-- A1 = `Optional`, it is a logical value that specifies the A1 or R1C1 reference style. A1 style means, columns are labeled alphabetically, and rows are labeled numerically whereas R1C1 reference style means, both columns and rows are labeled numerically. If the A1 argument value is TRUE or omitted in the function, the `ADDRESS` function will return an A1-style reference; if the A1 argument value is FALSE, the ADDRESS function will return an R1C1-style reference.
-- sheet_text =  `Optional`, it is a text value that specifies the name of the worksheet to be used as the external reference. If the sheet_text argument value is omitted, no sheet name will be used, and the address returned by the function refers to a cell on the current sheet.
+- `A1` = **Optional**, it is a logical value that specifies the A1 or R1C1 reference style. A1 style means, columns are labeled alphabetically, and rows are labeled numerically whereas R1C1 reference style means, both columns and rows are labeled numerically. If the `A1` argument value is TRUE or omitted in the function, the `ADDRESS` function will return an A1-style reference; if the `A1` argument value is FALSE, the `ADDRESS` function will return an R1C1-style reference.
+- `sheet_text` =  **Optional**, it is a text value that specifies the name of the worksheet to be used as the external reference. If the `sheet_text` argument value is omitted, no sheet name will be used, and the address returned by the function refers to a cell on the current sheet.
 
 Let us consider a scenario where you can learn how to implement the `ADDRESS` function in Excel. Consider the example given below.
 
@@ -74,7 +74,7 @@ The `AREAS` function has the following syntax:
 
 The argument used in this function is mentioned below:
 
-- reference =  `Required`, it is a reference to a cell or range of cells and refer to multiple areas. In case, you want to specify a single argument for multiple references, then you must include extra sets of parentheses. In that way the comma will not be interpreted  as a field separator by the Microsoft Excel.
+- `reference` =  **Required**, it is a reference to a cell or range of cells and refer to multiple areas. In case, you want to specify a single argument for multiple references, then you must include extra sets of parentheses. In that way the comma will not be interpreted  as a field separator by the Microsoft Excel.
 
 Let us consider a scenario where you can learn how to implement the `AREAS` function in Excel. Consider the example given below.
 
@@ -142,9 +142,9 @@ The `CHOOSE` function has the following syntax:
 
 The arguments used in this function are mentioned below:
 
-- index_num =  `Required`, it specifies the selected value argument. This argument must be a number that lies between 1 and 254, or a formula or reference to a cell containing a number between 1 and 254.
+- `index_num` =  **Required**, it specifies the selected value argument. This argument must be a number that lies between 1 and 254, or a formula or reference to a cell containing a number between 1 and 254.
 
-- Value1, value2, ... = Value1 is a `Required` argument whereas subsequent values are `Optional` argument.     
+- `Value1, value2, ...` = `Value1` is a **Required** argument whereas subsequent values are **Optional** argument.     
 
 Let us consider a scenario where you can learn how to implement the `CHOOSE` function in Excel. Consider the example given below.
 
@@ -173,7 +173,7 @@ The `COLUMN` function has the following syntax:
 =COLUMN([reference])
 ```
 
-**reference** argument used in the function is `Optional`. If the argument is omitted in the function then the output will be the column number in which the formula appears. For an example, `=COLUMN(B10)` returns `2` as output, because column B is the second column.
+`reference` argument used in the function is **Optional**. If the argument is omitted in the function then the output will be the column number in which the formula appears. For an example, `=COLUMN(B10)` returns `2` as output, because column B is the second column.
 
 
 `COLUMNS` function returns the number of columns in the given array or reference.
@@ -184,6 +184,29 @@ The `COLUMNS` function has the following syntax:
 =COLUMNS(array)
 ```
 
-**array** argument used in the function is `Required`. This argument is an array or array formula, or a reference to a range of cells for which you want the number of columns. For an example, `=COLUMNS(A1:E1)` returns `5` as output.
+`array` argument used in the function is **Required**. This argument is an array or array formula, or a reference to a range of cells for which you want the number of columns. For an example, `=COLUMNS(A1:E1)` returns `5` as output.
 
-### HLOOKUP function 
+### INDEX Function 
+`INDEX` function uses an index to choose a value from a reference or array
+The `INDEX`` function has the following syntax:
+
+
+```
+=INDEX(array, row_num, [column_num]) 
+```
+
+The arguments used in this function are mentioned below:
+- `array` = **Required**, it is a range of cells or an array constant.
+- `row_num` = **Required**, it selects the row in array from which to return a value. In case the `row_num` is omitted, `column_num` is **Required**.
+- `column_num` = **Optional**, it selects the column in array from which to return a value. In case `column_num` is omitted, `row_num` is **Required**.
+
+Let us consider a scenario where you can learn how to implement the `INDEX` function in Excel. Consider the example given below.
+
+| A | B | C | D | E | F | G |
+| --- | --- | --- | --- | --- | --- | --- |
+| **SR. NO.** | **NAME** | **SUBJECT** | **GRADE** | **RANK** | **FORMULA** | **OUTPUT** |
+| 1 | ALISHA | MATH | A | 2 | =INDEX(B1:D5, 4, 2) |
+| 2 | BEN | SCIENCE | A | 1 | =INDEX(B1:D5, 2, 1) |
+| 3 | CATHY | PHYSICS | D | 3 | =INDEX(B1:E5, 3, 2) |
+| 4 | DRAKE | CHEMISTRY | C | 4 | =INDEX(B1:E2, 2, 3) |
+| 5 | ELE | ECONOMY | B | 5 | =INDEX(B1:E5, 5, 5) |
