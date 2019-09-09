@@ -112,3 +112,37 @@ The result will be updated as shown below:
 | 3 | 2 | 1 | 2 | 1 |  | =AREAS(B3:E3) | 1 |
 | 4 | 7 | 11 | 3 | 0 | sheet1 | =AREAS(B4:D4, E4, F4) | 3 |
 | 5 | 18 | 12 | 4 | 1 |  | =AREAS(B5:C5 B5) | 1 |
+
+### UNIQUE Function
+The `UNIQUE` function returns unique values from a list of values.
+
+The `UNIQUE` function has the following syntax:
+
+
+```
+=UNIQUE(range)
+```
+
+Let us consider a scenario where you can learn how to implement the `UNIQUE` function in Excel. Consider the example given below where you have few values given in different rows:
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **VALUE** || **UNIQUE VALUES** |
+| 1 | 15 |  |
+| 2 | 18 |  |
+| 3 | 15 |  |
+| 4 | 16 |  |
+| 5 | 18 |  |
+
+Now you can apply `=UNIQUE(B1:B5)` function to get the unique values from the given list of values and the output will be as shown below:
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **VALUE** || **UNIQUE VALUES** |
+| 1 | 15 | 15 |
+| 2 | 18 | 16 |
+| 3 | 15 | 18 |
+| 4 | 16 |  |
+| 5 | 18 |  |
+
+
