@@ -7,19 +7,8 @@ In this guide, you will learn how to work with lookup functions in Microsoft Exc
 - CHOOSE Function
 - COLUMN Function
 - COLUMNS Function
-- HLOOKUP function 
-- INDEX function
-- INDIRECT function
-- LOOKUP function
-- MATCH function
-- OFFSET function
-- ROW function
-- ROWS function
-- VLOOKUP Function
-- TRANSPOSE function 
-- SORT function
-- SORTBY function
-- RTD function
+- INDEX Function
+- 
  
  ## LOOKUP Functions
 In this section, you will learn about each of these lookup functions through various scenarios.
