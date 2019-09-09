@@ -166,6 +166,15 @@ Let us consider a scenario where you can learn how to implement the `CHOOSE` fun
 | A | B | C |
 | --- | --- | --- |
 | **SR. NO.** | **Function** | **Output** |
+| 1 | =CHOOSE(4,"Monday", "Tuesday", "Wednesday", "Thursday", "Friday") | ? |
+| 2 | =CHOOSE(2, 2, "Cat", 23, 321, "ABC") | ? |
+| 3 | =CHOOSE(1,34,323,3221,1221) | ? |
+
+The result will be updated as shown below:
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **Function** | **Output** |
 | 1 | =CHOOSE(4,"Monday", "Tuesday", "Wednesday", "Thursday", "Friday") | Thursday |
 | 2 | =CHOOSE(2, 2, "Cat", 23, 321, "ABC") | Cat |
 | 3 | =CHOOSE(1,34,323,3221,1221) | 34 |
