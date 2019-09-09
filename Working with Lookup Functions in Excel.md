@@ -179,3 +179,25 @@ The result will be updated as shown below:
 | 2 | =CHOOSE(2, 2, "Cat", 23, 321, "ABC") | Cat |
 | 3 | =CHOOSE(1,34,323,3221,1221) | 34 |
 
+### COLUMN and COLUMNS Function
+`COLUMN` function returns the column number of the given cell reference. 
+The `COLUMN` function has the following syntax:
+
+
+```
+=COLUMN([reference])
+```
+
+**reference** argument used in the function is `Optional`. If the argument is omitted in the function then the output will be the column number in which the formula appears. For an example, `=COLUMN(B10)` returns `2` as output, because column B is the second column.
+
+
+`COLUMNS` function returns the number of columns in the given array or reference.
+The `COLUMNS` function has the following syntax:
+
+
+```
+=COLUMNS(array)
+```
+
+**array** argument used in the function is `Required`. This argument is an array or array formula, or a reference to a range of cells for which you want the number of columns. For an example, `=COLUMNS(A1:E1)` returns `5` as output.
+
