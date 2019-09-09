@@ -8,7 +8,7 @@ In this guide, you will learn how to work with lookup functions in Microsoft Exc
 - COLUMN Function
 - COLUMNS Function
 - INDEX Function
-- 
+- MATCH Function
  
  ## LOOKUP Functions
 In this section, you will learn about each of these lookup functions through various scenarios.
@@ -188,7 +188,7 @@ The `COLUMNS` function has the following syntax:
 
 ### INDEX Function 
 `INDEX` function uses an index to choose a value from a reference or array
-The `INDEX`` function has the following syntax:
+The `INDEX` function has the following syntax:
 
 
 ```
@@ -221,3 +221,25 @@ The result will be updated as shown below:
 | 3 | CATHY | PHYSICS | D | 3 | =INDEX(B1:E5, 3, 2) | PHYSICS |
 | 4 | DRAKE | CHEMISTRY | C | 4 | =INDEX(B1:E5, 2, 4) | 1 |
 | 5 | ELE | ECONOMY | B | 5 | =INDEX(B1:E5, 5, 4) | 5 |
+
+### MATCH Function
+The `MATCH` function searches a specific item in a range of cells, and returns the relative position of that item in the given range.
+The `MATCH` function has the following syntax:
+
+
+```
+=MATCH(lookup_value, lookup_array, [match_type])
+```
+
+The arguments used in this function are mentioned below:
+- `lookup_value` =  **Required**, it is the value that you want to match in the given `lookup_array`. It can be a number, text, logical value, a cell reference to a number.
+- `lookup_array` = **Required**, it is the range of cells which is being searched.
+- `match_type` = **Optional**, this argument specifies how the Excel matches `lookup_value` with values in the given `lookup_array`. The default value  is 1 for this argument.The table given below describes on what basis the function finds values based on the setting of the `match_type` argument:
+
+| Match_type | Behavior |
+| --- | --- |
+| 1 or omitted | MATCH finds the largest value that is less than or equal to lookup_value. The values in the lookup_array argument must be placed in ascending order, for example: ...-2, -1, 0, 1, 2, ..., A-Z, FALSE, TRUE.                |
+| 0            | MATCH finds the first value that is exactly equal to lookup_value. The values in the lookup_array argument can be in any order.                                                                                             |
+| -1           | MATCH finds the smallest value that is greater than or equal tolookup_value. The values in the lookup_array argument must be placed in descending order, for example: TRUE, FALSE, Z-A, ...2, 1, 0, -1, -2, ..., and so on. |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
