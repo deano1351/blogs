@@ -205,8 +205,8 @@ Let us consider a scenario where you can learn how to implement the `INDEX` func
 | A | B | C | D | E | F | G |
 | --- | --- | --- | --- | --- | --- | --- |
 | **SR. NO.** | **NAME** | **SUBJECT** | **GRADE** | **RANK** | **FORMULA** | **OUTPUT** |
-| 1 | ALISHA | MATH | A | 2 | =INDEX(B1:D5, 4, 2) |
-| 2 | BEN | SCIENCE | A | 1 | =INDEX(B1:D5, 2, 1) |
-| 3 | CATHY | PHYSICS | D | 3 | =INDEX(B1:E5, 3, 2) |
-| 4 | DRAKE | CHEMISTRY | C | 4 | =INDEX(B1:E2, 2, 3) |
-| 5 | ELE | ECONOMY | B | 5 | =INDEX(B1:E5, 5, 5) |
+| 1 | ALISHA | MATH | A | 2 | =INDEX(B1:D1, 1, 3) | A |
+| 2 | BEN | SCIENCE | A | 1 | =INDEX(B1:D5, 2, 1) | BEN |
+| 3 | CATHY | PHYSICS | D | 3 | =INDEX(B1:E5, 3, 2) | PHYSICS |
+| 4 | DRAKE | CHEMISTRY | C | 4 | =INDEX(B1:E5, 2, 4) | 1 |
+| 5 | ELE | ECONOMY | B | 5 | =INDEX(B1:E5, 5, 4) | 5 |
