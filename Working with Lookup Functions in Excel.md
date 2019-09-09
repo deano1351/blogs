@@ -127,7 +127,7 @@ Let us consider a scenario where you can learn how to implement the `UNIQUE` fun
 
 | A | B | C |
 | --- | --- | --- |
-| **SR. NO.** | **VALUE** || **UNIQUE VALUES** |
+| **SR. NO.** | **VALUE** | **UNIQUE VALUES** |
 | 1 | 15 |  |
 | 2 | 18 |  |
 | 3 | 15 |  |
@@ -138,7 +138,7 @@ Now you can apply `=UNIQUE(B1:B5)` function to get the unique values from the gi
 
 | A | B | C |
 | --- | --- | --- |
-| **SR. NO.** | **VALUE** || **UNIQUE VALUES** |
+| **SR. NO.** | **VALUE** | **UNIQUE VALUES** |
 | 1 | 15 | 15 |
 | 2 | 18 | 16 |
 | 3 | 15 | 18 |
