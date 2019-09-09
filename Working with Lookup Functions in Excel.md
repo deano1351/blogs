@@ -7,11 +7,7 @@ In this guide, you will learn how to work with lookup functions in Microsoft Exc
 - CHOOSE Function
 - COLUMN Function
 - COLUMNS Function
-- FILTER Function
-- FORMULATEXT Function 
-- GETPIVOTDATA Function
 - HLOOKUP function 
-- HYPERLINK function
 - INDEX function
 - INDIRECT function
 - LOOKUP function
@@ -201,3 +197,4 @@ The `COLUMNS` function has the following syntax:
 
 **array** argument used in the function is `Required`. This argument is an array or array formula, or a reference to a range of cells for which you want the number of columns. For an example, `=COLUMNS(A1:E1)` returns `5` as output.
 
+### HLOOKUP function 
