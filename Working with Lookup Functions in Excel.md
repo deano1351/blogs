@@ -9,6 +9,8 @@ In this guide, you will learn how to work with lookup functions in Microsoft Exc
 - COLUMNS Function
 - INDEX Function
 - MATCH Function
+- VLOOKUP Function
+- HLOOKUP Function
  
  ## LOOKUP Functions
 In this section, you will learn about each of these lookup functions through various scenarios.
@@ -263,3 +265,18 @@ The result will be updated as shown below:
 | 3 | BEN | 78 | C | =MATCH("F", D1:D5, -1 ) | 1 |
 | 4 | ELE | 94 | B | =MATCH("A", D1:D5, -1 ) | 5 |
 | 5 | DRAKE | 95 | A | =MATCH("ELE", B1:B5, 0) | 4 |
+
+### VLOOKUP Function
+You can use `VLOOKUP` function when you need to find values in a table or a range by row.
+The `VLOOKUP` function has the following syntax:
+
+
+```
+=VLOOKUP(lookup value, table_array, col_index_num, [range_lookup]).
+```
+
+The arguments used in this function are mentioned below:
+- `lookup value` = **Required**, it is the value that you want to look up.
+- `table_array` = **Required**, it is the range where the `lookup value` is located. `lookup value` should always be in the first column in the `table_array` for `VLOOKUP` function to work correctly. 
+- `col_index_num` = **Required**, it is the column number in the `table_array` that contains the return value of the function. 
+- `range_lookup` = **Optional**, it's value is `TRUE` if you want an approximate match of the return value, else `FALSE` if you want an exact match. The default value for this argument is `TRUE`.
