@@ -238,8 +238,7 @@ The arguments used in this function are mentioned below:
 
 | Match_type | Behavior |
 | --- | --- |
-| 1 or omitted | MATCH finds the largest value that is less than or equal to lookup_value. The values in the lookup_array argument must be placed in ascending order, for example: ...-2, -1, 0, 1, 2, ..., A-Z, FALSE, TRUE.                |
-| 0            | MATCH finds the first value that is exactly equal to lookup_value. The values in the lookup_array argument can be in any order.                                                                                             |
-| -1           | MATCH finds the smallest value that is greater than or equal tolookup_value. The values in the lookup_array argument must be placed in descending order, for example: TRUE, FALSE, Z-A, ...2, 1, 0, -1, -2, ..., and so on. |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1 or omitted | It finds the largest value that is less than or equal to `lookup_value`. The values in the `lookup_array` argument must be placed in ascending order, for example: ...-2, -1, 0, 1, 2, ..., A-Z, FALSE, TRUE. |
+| 0 | It finds the first value that is exactly equal to `lookup_value`. The values in the `lookup_array` argument can be in any order |
+| -1 | It finds the smallest value that is greater than or equal to `lookup_value`. The values in the `lookup_array` argument must be placed in descending order, for example: TRUE, FALSE, Z-A, ...2, 1, 0, -1, -2, ..., and so on. |
 
