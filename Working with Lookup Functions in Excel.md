@@ -88,3 +88,27 @@ The `AREAS` function has the following syntax:
 ```
 
 The argument used in this function is mentioned below:
+
+- reference =  `Required`, it is a reference to a cell or range of cells and refer to multiple areas. In case, you want to specify a single argument for multiple references, then you must include extra sets of parentheses. In that way the comma will not be interpreted  as a field separator by the Microsoft Excel.
+
+Let us consider a scenario where you can learn how to implement the `AREAS` function in Excel. Consider the example given below.
+
+| A | B| C | D | E | F | G | H |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Sr. No.** | **Row_Num** | **Column_Num** | **Abs_Num** | **A1** | **Sheet_text** | **AREA Formula** | **Result** |
+| 1 | 1 | 4 |  |  |  | =AREAS(B1:C1) |  ? |
+| 2 | 3 | 5 | 1 |  |  | =AREAS(B2:C2, D2) | ? |
+| 3 | 2 | 1 | 2 | 1 |  | =AREAS(B3:E3) | ? |
+| 4 | 7 | 11 | 3 | 0 | sheet1 | =AREAS(B4:D4, E4, F4) | ? |
+| 5 | 18 | 12 | 4 | 1 |  | =AREAS(B5:C5 B5) | ? |
+
+The result will be updated as shown below:
+
+| A | B| C | D | E | F | G | H |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Sr. No.** | **Row_Num** | **Column_Num** | **Abs_Num** | **A1** | **Sheet_text** | **AREA Formula** | **Result** |
+| 1 | 1 | 4 |  |  |  | =AREAS(B1:C1) |  1 |
+| 2 | 3 | 5 | 1 |  |  | =AREAS(B2:C2, D2) | 2 |
+| 3 | 2 | 1 | 2 | 1 |  | =AREAS(B3:E3) | 1 |
+| 4 | 7 | 11 | 3 | 0 | sheet1 | =AREAS(B4:D4, E4, F4) | 3 |
+| 5 | 18 | 12 | 4 | 1 |  | =AREAS(B5:C5 B5) | 1 |
