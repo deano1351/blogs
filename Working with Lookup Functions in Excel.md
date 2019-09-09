@@ -280,3 +280,11 @@ The arguments used in this function are mentioned below:
 - `table_array` = **Required**, it is the range where the `lookup value` is located. `lookup value` should always be in the first column in the `table_array` for `VLOOKUP` function to work correctly. 
 - `col_index_num` = **Required**, it is the column number in the `table_array` that contains the return value of the function. 
 - `range_lookup` = **Optional**, it's value is `TRUE` if you want an approximate match of the return value, else `FALSE` if you want an exact match. The default value for this argument is `TRUE`.
+
+Let us consider a scenario where you can learn how to implement the `VLOOKUP` function in Excel. Consider that you have a database that contains information of all teachers in a class as it is given in the image below:
+
+![Imgur](https://i.imgur.com/bDo68Q4.png)
+
+Now, you want to know the `D.O.B` for `ID = 116`, then you  need to write the `=vlookup(116,A2:E11,5,0)` function so that you will get the output as `12-Aug-92` as shown in the image below:
+
+![Imgur](https://i.imgur.com/ivxl73i.png)
