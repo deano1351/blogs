@@ -1,15 +1,15 @@
 ## Introduction
 In this guide, you will learn how to work with lookup functions in Microsoft Excel 2019. There are various lookup functions which are present in the Excel 2019 version, as mentioned below:
 
-- ADDRESS function 
-- AREAS function
+- ADDRESS Function 
+- AREAS Function
 - UNIQUE Function
-- CHOOSE function
-- COLUMN function
-- COLUMNS function
-- FILTER function
-- FORMULATEXT function 
-- GETPIVOTDATA function
+- CHOOSE Function
+- COLUMN Function
+- COLUMNS Function
+- FILTER Function
+- FORMULATEXT Function 
+- GETPIVOTDATA Function
 - HLOOKUP function 
 - HYPERLINK function
 - INDEX function
@@ -145,4 +145,28 @@ Now you can apply `=UNIQUE(B1:B5)` function to get the unique values from the gi
 | 4 | 16 |  |
 | 5 | 18 |  |
 
+### CHOOSE Function
+`CHOOSE` function uses index_num to return a value from the list of value arguments. 
+
+The `CHOOSE` function has the following syntax:
+
+
+```
+=CHOOSE(index_num, value1, [value2], ...)
+```
+
+The arguments used in this function are mentioned below:
+
+- index_num =  `Required`, it specifies the selected value argument. This argument must be a number that lies between 1 and 254, or a formula or reference to a cell containing a number between 1 and 254.
+
+- Value1, value2, ... = Value1 is a `Required` argument whereas subsequent values are `Optional` argument.     
+
+Let us consider a scenario where you can learn how to implement the `CHOOSE` function in Excel. Consider the example given below.
+
+| A | B | C |
+| --- | --- | --- |
+| **SR. NO.** | **Function** | **Output** |
+| 1 | =CHOOSE(4,"Monday", "Tuesday", "Wednesday", "Thursday", "Friday") | Thursday |
+| 2 | =CHOOSE(2, 2, "Cat", 23, 321, "ABC") | Cat |
+| 3 | =CHOOSE(1,34,323,3221,1221) | 34 |
 
