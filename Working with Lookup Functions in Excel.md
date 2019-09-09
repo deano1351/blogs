@@ -242,3 +242,24 @@ The arguments used in this function are mentioned below:
 | 0 | It finds the first value that is exactly equal to `lookup_value`. The values in the `lookup_array` argument can be in any order |
 | -1 | It finds the smallest value that is greater than or equal to `lookup_value`. The values in the `lookup_array` argument must be placed in descending order, for example: TRUE, FALSE, Z-A, ...2, 1, 0, -1, -2, ..., and so on. |
 
+Let us consider a scenario where you can learn how to implement the `MATCH` function in Excel. Consider the example given below.
+
+| A | B | C | D | E | F |
+| --- | --- | --- | --- | --- | --- |
+| **SR. NO. ** | **NAME** | **MARKS** | **GRADE** | **FUNCTION** | **OUTPUT** |
+| 1 | ALISHA | 35 | F | =MATCH("BEN", B1:B5, 0) | ? |
+| 2 | CATHY | 75 | D | =MATCH(94, C1:C5, 1) | ? |
+| 3 | BEN | 78 | C | =MATCH("F", D1:D5, -1 ) | ? |
+| 4 | ELE | 94 | B | =MATCH("A", D1:D5, -1 ) | ? |
+| 5 | DRAKE | 95 | A | =MATCH("ELE", B1:B5, 0) | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D | E | F |
+| --- | --- | --- | --- | --- | --- |
+| **SR. NO. ** | **NAME** | **MARKS** | **GRADE** | **FUNCTION** | **OUTPUT** |
+| 1 | ALISHA | 35 | F | =MATCH("BEN", B1:B5, 0) | 3 |
+| 2 | CATHY | 75 | D | =MATCH(94, C1:C5, 1) | 4 |
+| 3 | BEN | 78 | C | =MATCH("F", D1:D5, -1 ) | 1 |
+| 4 | ELE | 94 | B | =MATCH("A", D1:D5, -1 ) | 5 |
+| 5 | DRAKE | 95 | A | =MATCH("ELE", B1:B5, 0) | 4 |
