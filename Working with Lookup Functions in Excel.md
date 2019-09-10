@@ -11,6 +11,7 @@ In this guide, you will learn how to work with lookup functions in Microsoft Exc
 - MATCH Function
 - VLOOKUP Function
 - HLOOKUP Function
+- LOOKUP Function
  
  ## LOOKUP Functions
 In this section, you will learn about each of these lookup functions through various scenarios.
@@ -305,3 +306,39 @@ Let us consider a scenario where you can learn how to implement the `HLOOKUP` fu
 Now, you want to know the `D.O.B` for `ID = 115`, then you  need to write the `=HLOOKUP(115,B1:K5,5,0)` function so that you will get the output as `03-Aug-88` as shown in the image below:
 
 ![Imgur](https://i.imgur.com/ISKayCx.png)
+
+### LOOKUP Function
+`LOOKUP` function can be used when you need to look in a single row or column and then find a value from the same position in a second row or column.
+The `LOOKUP` function has the following syntax:
+
+
+```
+=LOOKUP(lookup_value, lookup_vector, [result_vector])
+```
+
+The arguments used in this function are mentioned below:
+- `lookup_value` =  **Required**, it is a value that `LOOKUP` function searches for in the first vector. It can be a number, text, logical value, a cell reference to a number.
+- `lookup_vector` = **Required**, it is a range that contains only one row or one column. It can be text, numbers, or logical values and  must be placed in ascending order.
+- `result_vector` = **Optional**, it is a range that contains only one row or column. The `result_vector` argument must be the same size as `lookup_vector`.
+
+Let us consider a scenario where you can learn how to implement the `LOOKUP` function in Excel. Consider the example given below.
+
+| A | B | C | D | E | F | G |
+| --- | --- | --- | --- | --- | --- | --- |
+| **SR. NO.** | **ID** | **NAME** | **LAST NAME** | **DEPARTMENT** | **Formula** | **Output** |
+| 1 | 101 | Alexa | Das | CSE | =LOOKUP(103,A2:A6,D2:D6) | ? |
+| 2 | 102 | Alisha | Loredo | EEE | =LOOKUP(107,A2:A6,D2:D6) | ? |
+| 3 | 103 | Dev | Raghu | ECE | =LOOKUP(A3,A2:A6,B2:B6) | ? |
+| 4 | 104 | Doug | Verma | IT | =LOOKUP("alisha",B2:B6,C2:C6) | ? |
+| 5 | 105 | Jame | Will | EEE | =LOOKUP(105,A2:A6,C2:C6) | ? |
+
+The result will be updated as shown below:
+
+| A | B | C | D | E | F | G |
+| --- | --- | --- | --- | --- | --- | --- |
+| **SR. NO.** | **ID** | **NAME** | **LAST NAME** | **DEPARTMENT** | **Formula** | **Output** |
+| 1 | 101 | Alexa | Das | CSE | =LOOKUP(103,A2:A6,D2:D6) | ECE |
+| 2 | 102 | Alisha | Loredo | EEE | =LOOKUP(107,A2:A6,D2:D6) | EEE |
+| 3 | 103 | Dev | Raghu | ECE | =LOOKUP(A3,A2:A6,B2:B6) | Alisha |
+| 4 | 104 | Doug | Verma | IT | =LOOKUP("alisha",B2:B6,C2:C6) | Loredo |
+| 5 | 105 | Jame | Will | EEE | =LOOKUP(105,A2:A6,C2:C6) | Will |
