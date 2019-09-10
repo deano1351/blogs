@@ -326,19 +326,19 @@ Let us consider a scenario where you can learn how to implement the `LOOKUP` fun
 | A | B | C | D | E | F | G |
 | --- | --- | --- | --- | --- | --- | --- |
 | **SR. NO.** | **ID** | **NAME** | **LAST NAME** | **DEPARTMENT** | **Formula** | **Output** |
-| 1 | 101 | Alexa | Das | CSE | =LOOKUP(103,B2:B6,E2:E6) | ? |
-| 2 | 102 | Alisha | Loredo | EEE | =LOOKUP(107,B2:B6,E2:E6) | ? |
-| 3 | 103 | Dev | Raghu | ECE | =LOOKUP(B3,B2:B6,C2:C6) | ? |
-| 4 | 104 | Doug | Verma | IT | =LOOKUP("alisha",C2:C6,D2:D6) | ? |
-| 5 | 105 | Jame | Will | EEE | =LOOKUP(105,B2:B6,D2:D6) | ? |
+| 2 | 101 | Alexa | Das | CSE | =LOOKUP(103,B2:B6,E2:E6) | ? |
+| 3 | 102 | Alisha | Loredo | EEE | =LOOKUP(107,B2:B6,E2:E6) | ? |
+| 4 | 103 | Dev | Raghu | ECE | =LOOKUP(B3,B2:B6,C2:C6) | ? |
+| 5 | 104 | Doug | Verma | IT | =LOOKUP("alisha",C2:C6,D2:D6) | ? |
+| 6 | 105 | Jame | Will | EEE | =LOOKUP(105,B2:B6,D2:D6) | ? |
 
 The result will be updated as shown below:
 
 | A | B | C | D | E | F | G |
 | --- | --- | --- | --- | --- | --- | --- |
 | **SR. NO.** | **ID** | **NAME** | **LAST NAME** | **DEPARTMENT** | **Formula** | **Output** |
-| 1 | 101 | Alexa | Das | CSE | =LOOKUP(103,B2:B6,E2:E6) | ECE |
-| 2 | 102 | Alisha | Loredo | EEE | =LOOKUP(107,B2:B6,E2:E6) | EEE |
-| 3 | 103 | Dev | Raghu | ECE | =LOOKUP(B3,B2:B6,C2:C6) | Alisha |
-| 4 | 104 | Doug | Verma | IT | =LOOKUP("alisha",C2:C6,D2:D6) | Loredo |
-| 5 | 105 | Jame | Will | EEE | =LOOKUP(105,B2:B6,D2:D6) | Will |
+| 2 | 101 | Alexa | Das | CSE | =LOOKUP(103,B2:B6,E2:E6) | ECE |
+| 3 | 102 | Alisha | Loredo | EEE | =LOOKUP(107,B2:B6,E2:E6) | EEE |
+| 4 | 103 | Dev | Raghu | ECE | =LOOKUP(B3,B2:B6,C2:C6) | Alisha |
+| 5 | 104 | Doug | Verma | IT | =LOOKUP("alisha",C2:C6,D2:D6) | Loredo |
+| 6 | 105 | Jame | Will | EEE | =LOOKUP(105,B2:B6,D2:D6) | Will |
