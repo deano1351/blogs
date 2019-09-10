@@ -344,4 +344,4 @@ The result will be updated as shown below:
 | 6 | 105 | Jame | Will | EEE | =LOOKUP(105,B2:B6,D2:D6) | Will |
 
 ## Conclusion
-In this guide, you've learnt various LOOKUP functions like Match, Lookup, hlookup, vlookup etc in MS Excel 2019.
+In this guide, you've learnt various LOOKUP functions like Match, Lookup, hlookup, vlookup etc in MS Excel 2019. 
