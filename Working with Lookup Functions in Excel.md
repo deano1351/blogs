@@ -342,3 +342,6 @@ The result will be updated as shown below:
 | 4 | 103 | Dev | Raghu | ECE | =LOOKUP(B3,B2:B6,C2:C6) | Alisha |
 | 5 | 104 | Doug | Verma | IT | =LOOKUP("alisha",C2:C6,D2:D6) | Loredo |
 | 6 | 105 | Jame | Will | EEE | =LOOKUP(105,B2:B6,D2:D6) | Will |
+
+## Conclusion
+In this guide, you've learnt various LOOKUP functions like Match, Lookup, hlookup, vlookup etc in MS Excel 2019.
