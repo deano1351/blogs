@@ -46,16 +46,16 @@ The `PRODUCT` function has the following syntax:
 =PRODUCT(number1, [number2], ...)
 ```
 
-The arguments used in the function are the numbers that need to be multiplied. The `PRODUCT` function is useful when you need to multiply many cells together. To illustrate the same, let's consider the exmaple given below:
+The arguments used in the function are the numbers that need to be multiplied. The `PRODUCT` function is useful when you need to multiply many cells together. To illustrate the same, let's consider the example given below:
 
 |    A    |  B   |  C   |  D  |   E   |  F   |     G      |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
 | 1 | 13 | 3 | 21  | 3 | =PRODUCT(B1:E1) | ? |
-| 2 | 22 | 2 | 5 | 31 | =PRODUCT(B2:E2,3) | ? |
+| 2 | 22 | 2 | 5 | 31 | =PRODUCT(B2:E2, 3) | ? |
 | 3 | 8 | 50 | 5 | 2 | =8 * 50 * 5 * 2 | ? |
-| 4 | 6 | 7 | 17  | 3 | =PRODUCT(C4,E4) | ? |
-| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:E2,B5:E5) | ? |
+| 4 | 6 | 7 | 17  | 3 | =PRODUCT(C4, E4) | ? |
+| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:E2, B5:E5) | ? |
 
 The result column will be updated as given below:
 
@@ -63,7 +63,10 @@ The result column will be updated as given below:
 | --- | --- | --- | --- | --- | --- | --- |
 | **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
 | 1 | 13 | 3 | 21  | 3 | =PRODUCT(B1:E1) | 2457 |
-| 2 | 22 | 2 | 5 | 31 | =PRODUCT(B2:E2,3) | 20460 |
+| 2 | 22 | 2 | 5 | 31 | =PRODUCT(B2:E2, 3) | 20460 |
 | 3 | 8 | 50 | 5 | 2 | =8 * 50 * 5 * 2 | 4000 |
-| 4 | 6 | 7 | 17  | 3 | =PRODUCT(C4,E4) | 21 |
-| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:E2,B5:E5) | 45012000 |
+| 4 | 6 | 7 | 17  | 3 | =PRODUCT(C4, E4) | 21 |
+| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:E2, B5:E5) | 45012000 |
+
+## AVERAGE Function
+
