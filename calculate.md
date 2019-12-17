@@ -25,3 +25,13 @@ The arguments used in the function are the numbers that need to be added. As men
 | 4 | 62 | 57 | 17  | 343 | =SUM(B4, D4) | ? |
 | 5 | 15  | 51 | 11 | 87 | =SUM(B2:E2,B5:E5) | ? |
 
+The result will be updated as given below:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 103 | 53 | 21  | 3423 | =SUM(B1:E1) | 3600 |
+| 2 | 122 | 25 | 51 | 321 | =SUM(B2, C2, D2, E2) | 519 |
+| 3 | 88 | 50 | 15 | 12 | =SUM(88, 50, 15, 12) | 165 |
+| 4 | 62 | 57 | 17  | 343 | =SUM(B4, D4) | 79 |
+| 5 | 15  | 51 | 11 | 87 | =SUM(B2:E2,B5:E5) | 3764 |
