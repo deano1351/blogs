@@ -7,6 +7,7 @@ In this guide, you will learn how to calculate cell values using various functio
 - COUNT & COUNTA
 - IF
 - MAX & MIN
+- TRIM
 
 ## SUM Function
 The `SUM` function is used to add values. It can be used to add individual values, cell references or ranges or a mix of all three.
@@ -203,6 +204,37 @@ The result column will be updated as given below:
 | 2 | 22 | 2 | 5 | 31 | =MIN(B1:B4) | 6 |
 | 3 | 6 | 7 | 17  | 3 | =MAX(B1:E4) | 31 |
 | 4 | 15  | 5 | 11 | 8 | =MIN(B1:E4) | 2 |
+
+## TRIM Function
+The `TRIM` function removes all spaces from text except for single spaces between words.
+
+The `TRIM` function has the following syntax:
+
+
+```
+=TRIM(text)
+```
+
+`TRIM` function can be used on text that you have received from another application that may have irregular spacing. Let's consider the example given below to understand the functionality better:
+
+|    A    |  B   |  C   |  D  |
+| --- | --- | --- | --- |
+| **Sr. Number** | **TEXT** | **FORMULA** | **RESULT** |
+| 1 |   APPLE | =TRIM("   APPLE  ") | ?|
+| 2 | I   AM     A   DOCTOR  | =TRIM("  I   AM     A   DOCTOR ") | ? |
+| 3 | GRADES | =TRIM("GRADES") | ? |
+
+The result column will be updated as given below:
+
+|    A    |  B   |  C   |  D  |
+| --- | --- | --- | --- |
+| **Sr. Number** | **TEXT** | **FORMULA** | **RESULT** |
+| 1 |   APPLE | =TRIM("   APPLE  ") | "APPLE" |
+| 2 | I   AM     A   DOCTOR  | =TRIM("  I   AM     A   DOCTOR ") | "I AM A DOCTOR" |
+| 3 | GRADES | =TRIM("GRADES") | "GRADES" |
+
+
+
 
 ## Conclusion
 So far in this guide, you have learnt few of the formulas that help you to calculate cell values but there are hundreds of more excel formulas that you can explore in the excel and make your work a lot easier.
