@@ -165,3 +165,37 @@ The result column will be updated as given below:
 | 4 | 6 | 7 | 17  | 3 | =IF(C4 = E4, TRUE, FALSE) | FALSE |
 
 ## MAX & MIN Funcion
+The `MAX` function is used to return the largest value in a set of values whereas the `MIN` function returns the smallest number in a set of values.
+
+The `MAX` function has the following syntax:
+
+
+```
+=MAX(number1, [number2], ...)
+```
+
+The `MIN` function has the following syntax:
+
+
+```
+=MIN(number1, [number2], ...)
+```
+Let's consider the example given below to understand the use of both of the functions:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =MAX(B1:E1) | ? |
+| 2 | 22 | 2 | 5 | 31 | =MIN(B1:B4) | ? |
+| 3 | 6 | 7 | 17  | 3 | =MAX(B1:E4) | ? |
+| 4 | 15  | 5 | 11 | 8 | =MIN(B1:E4) | ? |
+
+The result column will be updated as given below:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =MAX(B1:E1) | 21 |
+| 2 | 22 | 2 | 5 | 31 | =MIN(B1:B4) | 6 |
+| 3 | 6 | 7 | 17  | 3 | =MAX(B1:E4) | 31 |
+| 4 | 15  | 5 | 11 | 8 | =MIN(B1:E4) | 2 |
