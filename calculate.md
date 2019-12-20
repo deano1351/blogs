@@ -4,7 +4,7 @@ n this guide, you will learn to calculate cell values using various functions in
 - SUM
 - PRODUCT
 - AVERAGE
-
+- COUNT & COUNTA
 
 ## SUM Function
 The `SUM` function is used to add values. It can be used to add individual values, cell references or ranges or a mix of all three.
@@ -85,7 +85,7 @@ Arguments present in the function can either be numbers or names, ranges, or cel
 | 1 | 13 | 3 | 21  | 3 | =AVERAGE(B1:E1) | ? |
 | 2 | 22 | 2 | 5 | 31 | =AVERAGE(B2:E2, 3) | ? |
 | 3 | 6 | 7 | 17  | 3 | =PRODUCT(C3:E3) | ? |
-| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:B4) | ? |
+| 4 | 15  | 5 | 11 | 8 | =PRODUCT(B2:B4) | ? |
 
 The result column will be updated as given below:
 
@@ -95,4 +95,41 @@ The result column will be updated as given below:
 | 1 | 13 | 3 | 21  | 3 | =AVERAGE(B1:E1) | 10 |
 | 2 | 22 | 2 | 5 | 31 | =AVERAGE(B2:E2, 3) | 12.6 |
 | 3 | 6 | 7 | 17  | 3 | =PRODUCT(C3:E3) | 9 |
-| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:B4) | 14 |
+| 4 | 15  | 5 | 11 | 8 | =PRODUCT(B2:B4) | 14 |
+
+## COUNT & COUNTA Function
+The `COUNT` function is used to get the number of entries in a number field that is in a range or array of numbers whereas the `COUNTA` function counts the number of cells that are not empty in a range.
+The `COUNT` function has the following syntax:
+
+
+```
+=COUNT(value1, [value2], ...)
+```
+
+The `COUNTA` function has the following syntax:
+
+
+```
+=COUNTA(value1, [value2], ...)
+```
+
+Let's consider the example given below to understand the use of `COUNT` and `COUNTA` function better:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =COUNT(B1:E1) | ? |
+| 2 | 22 | 2 | 5 | 31 | =COUNTA(B2:E2) | ? |
+| 3 | 6 | 7 |  | NAME | =COUNT(B3:E3) | ? |
+| 4 |  TOM | 5 | 11 |  | =PRODUCT(B4:E4) | ? |
+
+The result column will be updated as given below:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =COUNT(B1:E1) | 4 |
+| 2 | 22 | 2 | 5 | 31 | =COUNTA(B2:E2) | 4 |
+| 3 | 6 | 7 |  | NAME | =COUNT(B3:E3) | 2 |
+| 4 |  TOM | 5 | 11 |  | =COUNTA(B4:E4) | 3 |
+
