@@ -69,4 +69,30 @@ The result column will be updated as given below:
 | 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:E2, B5:E5) | 45012000 |
 
 ## AVERAGE Function
+The `AVERAGE` function returns the average (arithmetic mean) of the arguments.
+The `AVERAGE` function has the following syntax:
 
+
+```
+=AVERAGE(number1, [number2], ...)
+```
+
+Arguments present in the function can either be numbers or names, ranges, or cell references that contain numbers. to illustrate the same, let's consider the example given below:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =AVERAGE(B1:E1) | ? |
+| 2 | 22 | 2 | 5 | 31 | =AVERAGE(B2:E2, 3) | ? |
+| 3 | 6 | 7 | 17  | 3 | =PRODUCT(C3:E3) | ? |
+| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:B4) | ? |
+
+The result column will be updated as given below:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =AVERAGE(B1:E1) | 10 |
+| 2 | 22 | 2 | 5 | 31 | =AVERAGE(B2:E2, 3) | 12.6 |
+| 3 | 6 | 7 | 17  | 3 | =PRODUCT(C3:E3) | 9 |
+| 5 | 15  | 5 | 11 | 8 | =PRODUCT(B2:B4) | 14 |
