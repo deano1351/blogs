@@ -5,6 +5,8 @@ n this guide, you will learn to calculate cell values using various functions in
 - PRODUCT
 - AVERAGE
 - COUNT & COUNTA
+- IF
+- MAX & MIN
 
 ## SUM Function
 The `SUM` function is used to add values. It can be used to add individual values, cell references or ranges or a mix of all three.
@@ -133,3 +135,33 @@ The result column will be updated as given below:
 | 3 | 6 | 7 |  | NAME | =COUNT(B3:E3) | 2 |
 | 4 |  TOM | 5 | 11 |  | =COUNTA(B4:E4) | 3 |
 
+## IF Function
+The `IF` function allows you to make a logical comparison between a value and what you expect by testing for a condition and returning a result if that condition is True or False.
+The `IF` function has the following syntax:
+
+
+```
+==IF(logical_test, [value_if_true], [value_if_false])
+```
+
+**Logical_test** argument used in the function is any value or expression that can be evaluated to TRUE or FALSE. Let's consider the example given below to understand this function:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =IF(B1 > D1, C1, FALSE)| ? |
+| 2 | 22 | 2 | 5 | 31 | =IF(NOT(B2 = E2), TRUE, FALSE) | ? |
+| 3 | 8 | 50 | 5 | 2 | =IF(B3 > 20, C1, D1) | ? |
+| 4 | 6 | 7 | 17  | 3 | =IF(C4 = E4, TRUE, FALSE) | ? |
+
+The result column will be updated as given below:
+
+|    A    |  B   |  C   |  D  |   E   |  F   |     G      |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Sr. Number** | **Value1** | **Value2** | **Value3** | **Value4** | **Formula** | **Result** |
+| 1 | 13 | 3 | 21  | 3 | =IF(B1 > D1, C1, FALSE)| FALSE |
+| 2 | 22 | 2 | 5 | 31 | =IF(NOT(B2 = E2), TRUE, FALSE) | TRUE |
+| 3 | 8 | 50 | 5 | 2 | =IF(B3 > 20, C1, D1) | 5 |
+| 4 | 6 | 7 | 17  | 3 | =IF(C4 = E4, TRUE, FALSE) | FALSE |
+
+## MAX & MIN Funcion
