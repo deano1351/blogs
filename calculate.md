@@ -8,6 +8,7 @@ In this guide, you will learn how to calculate cell values using various functio
 - IF
 - MAX & MIN
 - TRIM
+- DEC2BIN
 
 ## SUM Function
 The `SUM` function is used to add values. It can be used to add individual values, cell references or ranges or a mix of all three.
@@ -233,8 +234,106 @@ The result column will be updated as given below:
 | 2 | I   AM     A   DOCTOR  | =TRIM("  I   AM     A   DOCTOR ") | "I AM A DOCTOR" |
 | 3 | GRADES | =TRIM("GRADES") | "GRADES" |
 
+## DEC2BIN Function
+The `DEC2BIN` function is used to convert a decimal number to binary.
+
+The `DEC2BIN` function has the following syntax:
 
 
+```
+=DEC2BIN(number, [places])
+```
+We can convert **Decimal** Number To **Binary/ Octal/ Hex** With Formulas or vice versa with slight modification in the formula. Let's consider an example below to illustrate the same:
+
+|    A    |  B   |  C   |  D  | E |
+| --- | --- | --- | --- |
+| **Sr. Number** | **DECIMAL** | **BINARY** | **HEX** | **OCTAL** |
+| 1 | 4 | =DEC2BIN(B1) | =DEC2HEX(B1) | =DEC2OCT(B1) |
+| 2 | 120 | =DEC2BIN(B2) | =DEC2HEX(B2) | =DEC2OCT(B2) |
+| 2 | 356 | =DEC2BIN(B3) | =DEC2HEX(B3) | =DEC2OCT(B3) |
+
+After applying the formula, the result will be updated as shown below:
+
+|    A    |  B   |  C   |  D  | E |
+| --- | --- | --- | --- |
+| **Sr. Number** | **DECIMAL** | **BINARY** | **HEX** | **OCTAL** |
+| 1 | 4 | 100 | 4 | 4 |
+| 2 | 120 | 1111000 | 170 | 78 |
+| 2 | 356 | 101100100 | 544 | 164 |
+
+Similarly, we can now convert **Binary** to **Decimal/ Octal/ Hex**, **Hex** to **Decimal/ Octal/ Binary** and **Octal** to **Decimal/ Binary/ Hex**.
+
+### Binary to Decimal/ Octal/ Hex
+You can use the syntax mentioned below for the conversion:
+
+Syntax for **Binary** to **Decimal**:
+
+
+```
+=BIN2DEC(number, [places])
+```
+
+Syntax for **Binary** to **Octal**:
+
+
+```
+=BIN2OCT(number, [places])
+```
+
+Syntax for **Binary** to **Hex**:
+
+
+```
+=BIN2HEX(number, [places])
+```
+
+### Hex to Decimal/ Octal/ Binary
+You can use the syntax mentioned below for the conversion:
+
+Syntax for **Hex** to **Decimal**:
+
+
+```
+=HEX2DEC(number, [places])
+```
+
+Syntax for **Hex** to **Octal**:
+
+
+```
+=HEX2OCT(number, [places])
+```
+
+Syntax for **Hex** to **Binary**:
+
+
+```
+=HEX2BIN(number, [places])
+```
+
+### Octal to Decimal/ Binary/ Hex
+You can use the syntax mentioned below for the conversion:
+
+Syntax for **Octal** to **Decimal**:
+
+
+```
+=OCT2DEC(number, [places])
+```
+
+Syntax for **Octal** to **Binary**:
+
+
+```
+=OCT2BIN(number, [places])
+```
+
+Syntax for **Octal** to **Hex**:
+
+
+```
+=OCT2HEX(number, [places])
+```
 
 ## Conclusion
 So far in this guide, you have learnt few of the formulas that help you to calculate cell values but there are hundreds of more excel formulas that you can explore in the excel and make your work a lot easier.
