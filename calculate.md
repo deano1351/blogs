@@ -1,5 +1,5 @@
 ## Introduction
-In this guide, you will learn to calculate cell values using various functions in Microsoft Excel 2019. Excel formula allows users to calculate numerous amount of data in a very short time in a very simplified manner. For an example if  a teacher wants to calculate the average mark scored by thousands of students in a subject. Normally it will take him hours to calculate the average through calculator but through excel a simple drag of cells containing marks and using a simple formula, the work will be done in few seconds. Excel formula plays a very important role in the life of students, auditors, business professionals etc. There are various functions present in the Excel 2019 version to calculate cell values, as mentioned below:
+In this guide, you will learn how to calculate cell values using various functions in Microsoft Excel 2019. Excel formula allows users to calculate numerous amount of data in a very short time as well as very simplified manner. For an example, what if  a teacher wants to calculate the average mark scored by thousands of students in a subject? Usually it will take him hours to calculate the average through calculator but through excel, a simple drag of cells containing marks and using a simple formula, the work will be done in a very few seconds. Excel formula plays a very important role in the life of students, auditors, business professionals, etc. There are various functions present in the Excel 2019 version to calculate cell values, as mentioned below:
 
 - SUM
 - PRODUCT
@@ -15,7 +15,7 @@ The `SUM` function has the following syntax:
 
 
 ```
-=SUM(number1,[number2],...)
+=SUM( number1, [number2], ... )
 ```
 The arguments used in the function are the numbers that need to be added. As mentioned above, arguments can be individual values, cell references or ranges. To illustrate the same, let's consider the example given below:
 
@@ -26,7 +26,7 @@ The arguments used in the function are the numbers that need to be added. As men
 | 2 | 122 | 25 | 51 | 321 | =SUM(B2, C2, D2, E2) | ? |
 | 3 | 88 | 50 | 15 | 12 | =SUM(88, 50, 15, 12) | ? |
 | 4 | 62 | 57 | 17  | 343 | =SUM(B4, D4) | ? |
-| 5 | 15  | 51 | 11 | 87 | =SUM(B2:E2,B5:E5) | ? |
+| 5 | 15  | 51 | 11 | 87 | =SUM(B2:E2, B5:E5) | ? |
 
 The result column will be updated as given below:
 
@@ -81,7 +81,7 @@ The `AVERAGE` function has the following syntax:
 =AVERAGE(number1, [number2], ...)
 ```
 
-Arguments present in the function can either be numbers or names, ranges, or cell references that contain numbers. to illustrate the same, let's consider the example given below:
+Arguments present in the function can either be numbers or names, ranges, or cell references that contain numbers. To illustrate the same, let's consider the example given below:
 
 |    A    |  B   |  C   |  D  |   E   |  F   |     G      |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -139,7 +139,7 @@ The result column will be updated as given below:
 | 4 |  TOM | 5 | 11 |  | =COUNTA(B4:E4) | 3 |
 
 ## IF Function
-The `IF` function allows you to make a logical comparison between a value and what you expect by testing for a condition and returning a result if that condition is True or False.
+The `IF` function allows you to make a logical comparison between a value and what you expect by testing for a condition and returning a result if that condition is TRUE or FALSE.
 
 The `IF` function has the following syntax:
 
@@ -148,7 +148,7 @@ The `IF` function has the following syntax:
 =IF(logical_test, [value_if_true], [value_if_false])
 ```
 
-**Logical_test** argument used in the function is any value or expression that can be evaluated to TRUE or FALSE. Let's consider the example given below to understand this function:
+**logical_test** argument used in the function is any value or expression that can be evaluated to TRUE or FALSE. Let's consider the example given below to understand this function:
 
 |    A    |  B   |  C   |  D  |   E   |  F   |     G      |
 | --- | --- | --- | --- | --- | --- | --- |
