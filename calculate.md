@@ -246,7 +246,7 @@ The `DEC2BIN` function has the following syntax:
 We can convert **Decimal** Number To **Binary/ Octal/ Hex** With Formulas or vice versa with slight modification in the formula. Let's consider an example below to illustrate the same:
 
 |    A    |  B   |  C   |  D  | E |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | **Sr. Number** | **DECIMAL** | **BINARY** | **HEX** | **OCTAL** |
 | 1 | 4 | =DEC2BIN(B1) | =DEC2HEX(B1) | =DEC2OCT(B1) |
 | 2 | 120 | =DEC2BIN(B2) | =DEC2HEX(B2) | =DEC2OCT(B2) |
@@ -255,7 +255,7 @@ We can convert **Decimal** Number To **Binary/ Octal/ Hex** With Formulas or vic
 After applying the formula, the result will be updated as shown below:
 
 |    A    |  B   |  C   |  D  | E |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | **Sr. Number** | **DECIMAL** | **BINARY** | **HEX** | **OCTAL** |
 | 1 | 4 | 100 | 4 | 4 |
 | 2 | 120 | 1111000 | 170 | 78 |
