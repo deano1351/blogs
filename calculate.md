@@ -1,5 +1,5 @@
 ## Introduction
-n this guide, you will learn to calculate cell values using various functions in Microsoft Excel 2019. There are various functions present in the Excel 2019 version to calculate cell values, as mentioned below:
+In this guide, you will learn to calculate cell values using various functions in Microsoft Excel 2019. Excel formula allows users to calculate numerous amount of data in a very short time in a very simplified manner. For an example if  a teacher wants to calculate the average mark scored by thousands of students in a subject. Normally it will take him hours to calculate the average through calculator but through excel a simple drag of cells containing marks and using a simple formula, the work will be done in few seconds. Excel formula plays a very important role in the life of students, auditors, business professionals etc. There are various functions present in the Excel 2019 version to calculate cell values, as mentioned below:
 
 - SUM
 - PRODUCT
@@ -41,6 +41,7 @@ The result column will be updated as given below:
 
 ## PRODUCT Function
 The `PRODUCT` function multiplies all the numbers given as arguments and returns the product.
+
 The `PRODUCT` function has the following syntax:
 
 
@@ -72,6 +73,7 @@ The result column will be updated as given below:
 
 ## AVERAGE Function
 The `AVERAGE` function returns the average (arithmetic mean) of the arguments.
+
 The `AVERAGE` function has the following syntax:
 
 
@@ -101,6 +103,7 @@ The result column will be updated as given below:
 
 ## COUNT & COUNTA Function
 The `COUNT` function is used to get the number of entries in a number field that is in a range or array of numbers whereas the `COUNTA` function counts the number of cells that are not empty in a range.
+
 The `COUNT` function has the following syntax:
 
 
@@ -137,11 +140,12 @@ The result column will be updated as given below:
 
 ## IF Function
 The `IF` function allows you to make a logical comparison between a value and what you expect by testing for a condition and returning a result if that condition is True or False.
+
 The `IF` function has the following syntax:
 
 
 ```
-==IF(logical_test, [value_if_true], [value_if_false])
+=IF(logical_test, [value_if_true], [value_if_false])
 ```
 
 **Logical_test** argument used in the function is any value or expression that can be evaluated to TRUE or FALSE. Let's consider the example given below to understand this function:
@@ -164,7 +168,7 @@ The result column will be updated as given below:
 | 3 | 8 | 50 | 5 | 2 | =IF(B3 > 20, C1, D1) | 5 |
 | 4 | 6 | 7 | 17  | 3 | =IF(C4 = E4, TRUE, FALSE) | FALSE |
 
-## MAX & MIN Funcion
+## MAX & MIN Function
 The `MAX` function is used to return the largest value in a set of values whereas the `MIN` function returns the smallest number in a set of values.
 
 The `MAX` function has the following syntax:
@@ -199,3 +203,14 @@ The result column will be updated as given below:
 | 2 | 22 | 2 | 5 | 31 | =MIN(B1:B4) | 6 |
 | 3 | 6 | 7 | 17  | 3 | =MAX(B1:E4) | 31 |
 | 4 | 15  | 5 | 11 | 8 | =MIN(B1:E4) | 2 |
+
+## Conclusion
+So far in this guide, you have learnt few of the formulas that help you to calculate cell values but there are hundreds of more excel formulas that you can explore in the excel and make your work a lot easier.
+You may also like to learn the below Excel topics:
+- [Working with Time and Date Functions in Excel - Part 1](/guides/working-with-time-date-functions-excel-part-1)
+- [Working with Time and Date Functions in Excel - Part 2](/guides/working-with-time-date-functions-excel-part-2)
+- [Excel Logic Function Playbook](/guides/working-with-logical-functions-in-excel)
+- [Working with Finance Function in Excel](/guides/working-finance-function-excel)
+- [Working with Statistics Function in Excel](/guides/working-statistics-function-excel)
+- [Formatting Excel Worksheets and Cells](/guides/formatting-excel-worksheets-cells)
+- [Working with Lookup Functions in Excel](/guides/working-with-lookup-functions-excel)
