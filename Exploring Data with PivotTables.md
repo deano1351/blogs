@@ -400,5 +400,5 @@ From the above chart, it is easy to infer that the profit of Samuel Arts is alwa
 ## Conclusion
 In this guide, you have learned about the basics of creating a PivotTable, managing the items within it, working with functions and charts. 
 
-To get in-depth working knowledge on this subject, you can take [Exploring Data with PivotTables](https://www.pluralsight.com/courses/exploring-data-pivottables) course on PluralSight. 
+To get in-depth working knowledge on this subject, you can take [Exploring Data with PivotTables](https://www.pluralsight.com/courses/exploring-data-pivottables) course on PluralSight.  
 
